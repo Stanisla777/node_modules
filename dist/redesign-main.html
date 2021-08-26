@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Главная страница</title>
+        <meta name="description" content="Описание главной страницы" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="preload" href="fonts/Gilroy-Medium.woff" as="font" crossorigin="anonymous" />
+        <link rel="preload" href="fonts/Gilroy-Bold.woff" as="font" crossorigin="anonymous" />
+        <link rel="preload" href="fonts/Gilroy-SemiBold.woff" as="font" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="img/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <body class="body-color-white">
+        <div class="page-wrap js-p-wrap">
+            <header class="header__type-2">
+                <!--include ring-nav-->
+                <div class="container-block">
+                    <div class="header-grid-row">
+                        <a class="header__wrap-for-logo header__logo-type-2" href="/"
+                            ><div class="header__logo-colored-square"><img src="img/colored-square.png" alt="" /></div>
+                            <div class="header__logo-img-type-2">
+                                <picture
+                                    ><source srcset="img/logo-3-dom-rf.svg" media="(max-width: 767px)"/>
+                                    <img class="header__logo-img" src="img/logo-3-dom-rf.svg" alt=""
+                                /></picture></div
+                        ></a>
+                        <nav class="header__information-category">
+                            <div class="header__information-category-item active"><a href="#">Для людей</a></div>
+                            <div class="header__information-category-item"><a href="#">Для бизнеса</a></div>
+                            <div class="header__information-category-item"><a href="#">Для страны</a></div>
+                        </nav>
+                        <div class="header__wrap-instruments">
+                            <div class="header__instruments">
+                                <div class="header__city-selection">
+                                    <div class="header__wrap-city">
+                                        <svg
+                                            width="10"
+                                            height="10"
+                                            viewBox="0 0 10 10"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M9.66722 0.0130966L0.173017 3.17038C0.123875 3.18663 0.0809298 3.21756 0.0500011 3.25898C0.0190725 3.3004 0.00165558 3.35031 0.000112534 3.40194C-0.00143051 3.45357 0.0129747 3.50442 0.0413742 3.54761C0.0697746 3.59079 0.110796 3.62422 0.158879 3.64337L4.56797 5.40284L6.80204 9.86072C6.82478 9.90611 6.86073 9.94359 6.90518 9.96826C6.94963 9.99292 7.00051 10.0036 7.05116 9.99893C7.1018 9.99424 7.14985 9.97441 7.189 9.94201C7.22815 9.90962 7.25658 9.86619 7.27057 9.8174L9.99034 0.320866C10.0029 0.276748 10.0032 0.230035 9.99115 0.185769C9.97909 0.141503 9.95513 0.101365 9.92188 0.0696878C9.88862 0.0380107 9.84732 0.0159976 9.80244 0.00602428C9.75756 -0.00394901 9.71081 -0.00150366 9.66722 0.0130966Z"
+                                                fill="black"
+                                            ></path>
+                                        </svg>
+                                        <p class="header__selected-city">Москва</p>
+                                    </div>
+                                </div>
+                                <div class="header__language dropdown-parent">
+                                    <input type="hidden" />
+                                    <p class="header__selected-language dropdown-button dropdown-selected">Eng</p>
+                                    <div class="dropdown-list header__wrap-language-list">
+                                        <ul class="header__language-list">
+                                            <li><p>Rus</p></li>
+                                            <li><p>Eng</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header__search btn-search-block">
+                                    <div class="header__search-icon">
+                                        <svg
+                                            width="21"
+                                            height="21"
+                                            viewBox="0 0 21 21"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M16.031 14.617L20.314 18.899L18.899 20.314L14.617 16.031C13.0237 17.3082 11.042 18.0029 9 18C4.032 18 0 13.968 0 9C0 4.032 4.032 0 9 0C13.968 0 18 4.032 18 9C18.0029 11.042 17.3082 13.0237 16.031 14.617ZM14.025 13.875C15.2941 12.5699 16.0029 10.8204 16 9C16 5.132 12.867 2 9 2C5.132 2 2 5.132 2 9C2 12.867 5.132 16 9 16C10.8204 16.0029 12.5699 15.2941 13.875 14.025L14.025 13.875Z"
+                                                fill="black"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="header__menu-call js-open-menu">
+                                    <svg
+                                        width="56"
+                                        height="10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true"
+                                    >
+                                        <rect x="1" y="1" width="56" height="2" fill="#000"></rect>
+                                        <rect x="1" y="7" width="56" height="2" fill="#000"></rect>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- для отображения вопроса добавить класс open-->
+                <div class="geolocation__question geolocation__question_mobile">
+                    <span class="geolocation__question-text">Ваш город Петропавловск&#8209;Камчатский?</span>
+                    <div class="geolocation__question-btns">
+                        <button class="btn btn_green js--geolocation-yes">Да</button
+                        ><button class="btn btn_gray js--geolocation-no">Выбрать другой</button>
+                    </div>
+                </div>
+            </header>
+            <div class="menu" id="menu">
+                <div class="menu__header">
+                    <button class="menu__close js-close-menu" aria-label="Закрыть меню"></button>
+                    <form class="geolocation geolocation_menu js--geolocation" action="">
+                        <div class="geolocation__back"></div>
+                        <div class="geolocation__choosen">
+                            <input type="text" name="" value="" /><span>Выберите город</span
+                            ><svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 5L7.29289 10.2929C7.68342 10.6834 8.31658 10.6834 8.7071 10.2929L14 5"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div class="geolocation__select">
+                            <div class="geolocation__search">
+                                <input type="search" name="" placeholder="Поиск субъекта" /><button
+                                    class="geolocation__search-btn"
+                                ></button>
+                            </div>
+                            <div class="geolocation__list"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="menu__wrap">
+                    <div class="menu__body">
+                        <div class="menu__col">
+                            <ul class="menu__nav menu-nav">
+                                <li class="menu-nav__item menu-nav__item_sub">
+                                    <a class="menu-nav__link" href="instructions.html">Инструкции</a>
+                                    <ul class="menu-sub-nav js-sub-menu">
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#fed"
+                                                >Федеральные программы поддрежки</a
+                                            >
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Ипотека </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Реструктуризация долга</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Льготы</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Оформление собственноcти</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Эксплуатация</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Аренда</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Продажа</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Покупка</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Земельные участки </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-nav__item menu-nav__item_sub">
+                                    <a class="menu-nav__link" href="services.html">Сервисы</a>
+                                    <ul class="menu-sub-nav js-sub-menu">
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Ипотека </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Реструктуризация долга</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Льготы</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Оформление собственноcти</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Эксплуатация</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Аренда</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Продажа</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Покупка</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Земельные участки </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Земельные участки </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Земельные участки </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Земельные участки </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-nav__item menu-nav__item_sub">
+                                    <a class="menu-nav__link" href="documents.html">Документы</a>
+                                    <ul class="menu-sub-nav js-sub-menu">
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Федеральные программы поддрежки</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Ипотека </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Реструктуризация долга</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Льготы</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Оформление собственноcти</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Эксплуатация</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Аренда</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Продажа</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Покупка</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Земельные участки </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-nav__item menu-nav__item_sub">
+                                    <a class="menu-nav__link" href="faq.html">Вопросы и ответы</a>
+                                    <ul class="menu-sub-nav js-sub-menu">
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Вопрос </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Ответ</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Вопрос </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Ответ</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Вопрос </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Ответ</a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Вопрос </a>
+                                        </li>
+                                        <li class="menu-sub-nav__item">
+                                            <a class="menu-sub-nav__link" href="#">Ответ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-nav__item"><a class="menu-nav__link" href="news.html">Новости</a></li>
+                                <li class="menu-nav__item">
+                                    <a class="menu-nav__link" href="about.html">О проекте</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__col menu__sub-menu" id="sub-menu-wrap"></div>
+                    </div>
+                    <div class="menu__footer">
+                        <div class="menu__soc soc-link">
+                            <a class="soc-link__item" href="#" title="facebook"
+                                ><svg
+                                    class="soc-link__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="100%"
+                                    height="100%"
+                                >
+                                    <use xlink:href="img/svg-lib.svg#ico-fb"></use></svg></a
+                            ><a class="soc-link__item" href="#" title="instagram"
+                                ><svg
+                                    class="soc-link__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="100%"
+                                    height="100%"
+                                >
+                                    <use xlink:href="img/svg-lib.svg#ico-insta"></use></svg></a
+                            ><a class="soc-link__item" href="#" title="vkontakte"
+                                ><svg
+                                    class="soc-link__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="100%"
+                                    height="100%"
+                                >
+                                    <use xlink:href="img/svg-lib.svg#ico-vk"></use></svg></a
+                            ><a class="soc-link__item" href="#" title="twitter"
+                                ><svg
+                                    class="soc-link__icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="100%"
+                                    height="100%"
+                                >
+                                    <use xlink:href="img/svg-lib.svg#ico-tw"></use></svg
+                            ></a>
+                        </div>
+                        <div class="menu__footer-col">
+                            <div class="menu__contact">
+                                <a class="menu__phone" href="tel:+78007751122">8 800 775-11-22</a
+                                ><a class="menu__email" href="mailto:consultant@domrf.ru">consultant@domrf.ru</a>
+                            </div>
+                            <!-- a.menu__lk(href="#")| Войти-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <div class="section-possible-services">
+                    <div class="container-block">
+                        <div class="main-page-possible-services">
+                            <div class="possible-services">
+                                <a class="possible-services__item" href="#">Ипотека</a
+                                ><a class="possible-services__item" href="#">Покупка</a
+                                ><a class="possible-services__item" href="#">Аренда</a
+                                ><a class="possible-services__item" href="#">Банк</a
+                                ><a class="possible-services__item" href="#">Проверка застройщика</a
+                                ><a class="possible-services__item" href="#">Сервисы</a
+                                ><a class="possible-services__item" href="#">Индекс цен</a>
+                            </div>
+                        </div>
+                        <div class="swiper-container js-one-slide-auto-no-pag main-page-bunner-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="img-bunner" href="#"
+                                        ><div class="img-bunner__img">
+                                            <picture
+                                                ><!--для мобильников-->
+                                                <source
+                                                    srcset="
+                                                        img/bunner-img_mobile.png    1x,
+                                                        img/bunner-img-2x_mobile.png 2x
+                                                    "
+                                                    media="(max-width: 767px)"/>
+                                                <!--для планшетов-->
+                                                <source
+                                                    srcset="
+                                                        img/bunner-img_tablet.png    1x,
+                                                        img/bunner-img-2x_tablet.png 2x
+                                                    "
+                                                    media="(max-width: 1243px)"/>
+                                                <!--для больших экранов-->
+                                                <source srcset="img/bunner-img.png 1x, img/bunner-img-2x.png 2x"/>
+                                                <!--та же картинка что и //для больших экранов--><img
+                                                    src="img/bunner-img.png"
+                                                    alt=""
+                                            /></picture>
+                                        </div>
+                                        <div class="img-bunner__wrap-des">
+                                            <p class="img-bunner__purpose">Ипотека</p>
+                                            <p class="img-bunner__des-purpose">
+                                                Льготная ипотека на&nbsp;новостройки от&nbsp;5,15%
+                                            </p>
+                                            <div class="oval-link img-bunner__oval">
+                                                <svg
+                                                    width="64"
+                                                    height="48"
+                                                    viewBox="0 0 64 48"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48H40C53.2548 48 64 37.2548 64 24C64 10.7452 53.2548 0 40 0H24ZM41.2567 23.6L34.0567 16.4H30.6007L36.5527 22.352H24.3367V24.848H36.5527L30.6007 30.8H34.0567L41.2567 23.6Z"
+                                                        fill="white"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                            <p class="img-bunner__benefit-offer">
+                                                ипотека по льготной ставке на&nbsp;покупку квартиры
+                                            </p>
+                                        </div></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-row-2-col main-page-services">
+                            <a class="grid-row-2-col__item main-page-services__item" href="#"
+                                ><div class="main-page-services__body" data-color="#F1F1F1">
+                                    <div class="main-page-services__wrap-des">
+                                        <p class="main-page-services__purpose">Недвижимость</p>
+                                        <p class="main-page-services__description">
+                                            Единый оператор льготных&nbsp;программ в&nbsp;жилищной&nbsp;сфере
+                                        </p>
+                                        <div class="oval-link main-page-services__oval">
+                                            <svg
+                                                width="64"
+                                                height="48"
+                                                viewBox="0 0 64 48"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48H40C53.2548 48 64 37.2548 64 24C64 10.7452 53.2548 0 40 0H24ZM41.2567 23.6L34.0567 16.4H30.6007L36.5527 22.352H24.3367V24.848H36.5527L30.6007 30.8H34.0567L41.2567 23.6Z"
+                                                    fill="#000"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-page-services__img">
+                                        <p class="main-page-services__advantage">
+                                            обеспечениие доступности жилья для граждан
+                                        </p>
+                                        <picture
+                                            ><source srcset="img/servicesImg.png 1x, img/servicesImg-2x.png 2x"/>
+                                            <img src="img/servicesImg.png" alt=""
+                                        /></picture>
+                                    </div></div></a
+                            ><a class="grid-row-2-col__item main-page-services__item" href="#"
+                                ><div class="main-page-services__body" data-color="#A3D562">
+                                    <div class="main-page-services__wrap-des">
+                                        <p class="main-page-services__purpose">Ипотека</p>
+                                        <p class="main-page-services__description">
+                                            Льготная ипотека на индивидуальное жилищное строительство от 6,5%
+                                        </p>
+                                        <div class="oval-link main-page-services__oval">
+                                            <svg
+                                                width="64"
+                                                height="48"
+                                                viewBox="0 0 64 48"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48H40C53.2548 48 64 37.2548 64 24C64 10.7452 53.2548 0 40 0H24ZM41.2567 23.6L34.0567 16.4H30.6007L36.5527 22.352H24.3367V24.848H36.5527L30.6007 30.8H34.0567L41.2567 23.6Z"
+                                                    fill="#000"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-page-services__img">
+                                        <p class="main-page-services__advantage">
+                                            ипотека по льготной ставке на строительство дома
+                                        </p>
+                                        <picture
+                                            ><source srcset="img/servicesImg2.png 1x, img/servicesImg2-2x.png 2x"/>
+                                            <img src="img/servicesImg2.png" alt=""
+                                        /></picture>
+                                    </div></div></a
+                            ><a class="grid-row-2-col__item main-page-services__item" href="#"
+                                ><div class="main-page-services__body" data-color="#1E1B1B">
+                                    <div class="main-page-services__wrap-des">
+                                        <p class="main-page-services__purpose">Академия</p>
+                                        <p class="main-page-services__description">Цифровая академия дом.рф</p>
+                                        <div class="oval-link main-page-services__oval">
+                                            <svg
+                                                width="64"
+                                                height="48"
+                                                viewBox="0 0 64 48"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48H40C53.2548 48 64 37.2548 64 24C64 10.7452 53.2548 0 40 0H24ZM41.2567 23.6L34.0567 16.4H30.6007L36.5527 22.352H24.3367V24.848H36.5527L30.6007 30.8H34.0567L41.2567 23.6Z"
+                                                    fill="#fff"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-page-services__img">
+                                        <p class="main-page-services__advantage">
+                                            актуальные знания и IT-компетенции от экспертов строительного рынка
+                                        </p>
+                                        <picture
+                                            ><source srcset="img/servicesImg3.png 1x, img/servicesImg3-2x.png 2x"/>
+                                            <img src="img/servicesImg3.png" alt=""
+                                        /></picture>
+                                    </div></div></a
+                            ><a class="grid-row-2-col__item main-page-services__item" href="#"
+                                ><div class="main-page-services__body" data-color="#D6CDC7">
+                                    <div class="main-page-services__wrap-des">
+                                        <p class="main-page-services__purpose">Банк</p>
+                                        <p class="main-page-services__description">Обслуживание кредитов</p>
+                                        <div class="oval-link main-page-services__oval">
+                                            <svg
+                                                width="64"
+                                                height="48"
+                                                viewBox="0 0 64 48"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48H40C53.2548 48 64 37.2548 64 24C64 10.7452 53.2548 0 40 0H24ZM41.2567 23.6L34.0567 16.4H30.6007L36.5527 22.352H24.3367V24.848H36.5527L30.6007 30.8H34.0567L41.2567 23.6Z"
+                                                    fill="#000"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="main-page-services__img">
+                                        <p class="main-page-services__advantage">
+                                            ипотека по льготной ставке на&nbsp;строительство дома
+                                        </p>
+                                        <picture
+                                            ><source srcset="img/servicesImg4.png 1x, img/servicesImg4-2x.png 2x"/>
+                                            <img src="img/servicesImg4.png" alt=""
+                                        /></picture>
+                                    </div></div
+                            ></a>
+                        </div>
+                        <div class="wrap-analytics">
+                            <div class="row-title">
+                                <h2 class="title-h2 main-page-title">
+                                    Следим как меняется рынок и делимся данными с вами
+                                </h2>
+                                <button class="button-all-section main-page-button-all-section" type="button">
+                                    Вся аналитика
+                                </button>
+                            </div>
+                            <div class="grid-row-3-col analytics">
+                                <div class="grid-row-3-col__item analytics__item analytics__item-grey">
+                                    <h3 class="analytics__title">Объем выданных ипотечных кредитов</h3>
+                                    <form class="analytics__choice dropdown-parent" method="" action="">
+                                        <input type="hidden" />
+                                        <div class="analytics__button dropdown-button">
+                                            <p class="dropdown-selected">Янв-май 2021</p>
+                                            <div class="analytics__arrow dropdown-arrow">
+                                                <svg
+                                                    width="12"
+                                                    height="6"
+                                                    viewBox="0 0 12 6"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M6 6L0.803847 -2.51245e-08L11.1962 8.834e-07L6 6Z"
+                                                        fill="black"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="analytics__wrap-list-choice dropdown-list">
+                                            <ul class="analytics__list-choice">
+                                                <li><p>Янв-май 2021</p></li>
+                                                <li><p>Янв-май 2020</p></li>
+                                                <li><p>Янв-май 2019</p></li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                    <div class="analytics__indicators">
+                                        <div class="analytics__indicators-header">
+                                            <p>Банк</p>
+                                            <p>млрд. ₽</p>
+                                        </div>
+                                        <ul class="analytics__indicators-body">
+                                            <li>
+                                                <p>Сбербанк Россиии</p>
+                                                <p class="price">1067900</p>
+                                            </li>
+                                            <li>
+                                                <p>Группа ВТБ</p>
+                                                <p class="price">401.7</p>
+                                            </li>
+                                            <li>
+                                                <p>Альфа-банк</p>
+                                                <p class="price">110.5</p>
+                                            </li>
+                                            <li>
+                                                <p>Открытие</p>
+                                                <p class="price">70</p>
+                                            </li>
+                                            <li>
+                                                <p>ДОМ.РФ</p>
+                                                <p class="price">61.5</p>
+                                            </li>
+                                            <li>
+                                                <p>Россельхозбанк</p>
+                                                <p class="price">70</p>
+                                            </li>
+                                            <li>
+                                                <p>ДОМ.РФ</p>
+                                                <p class="price">61.5</p>
+                                            </li>
+                                            <li>
+                                                <p>Россельхозбанк</p>
+                                                <p class="price">70</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid-row-3-col__item analytics__item analytics__item-grey">
+                                    <h3 class="analytics__title">Средневзвешенная ставка</h3>
+                                    <form class="analytics__choice dropdown-parent" method="" action="">
+                                        <input type="hidden" />
+                                        <div class="analytics__button dropdown-button">
+                                            <p class="dropdown-selected">Вторичное</p>
+                                            <div class="analytics__arrow dropdown-arrow">
+                                                <svg
+                                                    width="12"
+                                                    height="6"
+                                                    viewBox="0 0 12 6"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M6 6L0.803847 -2.51245e-08L11.1962 8.834e-07L6 6Z"
+                                                        fill="black"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="analytics__wrap-list-choice dropdown-list">
+                                            <ul class="analytics__list-choice">
+                                                <li><p>Старые дома</p></li>
+                                                <li><p>Частные дома</p></li>
+                                                <li><p>Бараки</p></li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                    <div class="analytics__indicators">
+                                        <div class="analytics__indicators-header">
+                                            <p>Банк</p>
+                                            <p>% годовых</p>
+                                        </div>
+                                        <ul class="analytics__indicators-body">
+                                            <li>
+                                                <p>Сбербанк Россиии</p>
+                                                <p>8</p>
+                                            </li>
+                                            <li>
+                                                <p>Группа ВТБ</p>
+                                                <p>8.3</p>
+                                            </li>
+                                            <li>
+                                                <p>Альфа-банк</p>
+                                                <p>8.49</p>
+                                            </li>
+                                            <li>
+                                                <p>Открытие</p>
+                                                <p>7.9</p>
+                                            </li>
+                                            <li>
+                                                <p>ДОМ.РФ</p>
+                                                <p>8.3</p>
+                                            </li>
+                                            <li>
+                                                <p>Россельхозбанк</p>
+                                                <p>8.4</p>
+                                            </li>
+                                            <li>
+                                                <p>ДОМ.РФ</p>
+                                                <p>8.3</p>
+                                            </li>
+                                            <li>
+                                                <p>Россельхозбанк</p>
+                                                <p>8.4</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="grid-row-3-col__item analytics__item analytics__item-green" href="#"
+                                    ><h3 class="analytics__title">Индекс цен на&nbsp;жильё</h3>
+                                    <div class="analytics__diagram">
+                                        <!--svg(width="100%" viewBox="0 0 434 122" fill="none" xmlns="http://www.w3.org/2000/svg")--><!--    path(d="M1 121L50.717 113.626L97.7465 108.933L146.456 81.4469L193.149 59.9944L241.523 20.4413L290.904 13.7374L337.933 31.838L386.642 18.4302L433 1" stroke="black" stroke-width="2")--><!--    path(d="M432.998 14.4831L386.232 40.1011H337.784L290.344 44.8202L241.896 52.9101L192.774 55.6067L146.344 63.0225L97.8957 79.8764L50.12 76.5056L2.00781 95.382" stroke="white" stroke-width="2")--><canvas
+                                            id="new-buildings"
+                                        ></canvas>
+                                    </div>
+                                    <div class="analytics__percentage">
+                                        <div class="analytics__percentage-item analytics__percentage-item-black">
+                                            <p class="analytics__percentage-title">Новостройки</p>
+                                            <div class="analytics__indices-indicators plus">
+                                                <div class="analytics__indicator-arrow-plus analytics__indicator-arrow">
+                                                    <img src="img/indicator-arrow.svg" />
+                                                </div>
+                                                <div
+                                                    class="analytics__indicator-arrow-minus analytics__indicator-arrow"
+                                                >
+                                                    <img src="img/indicator-arrow.svg" />
+                                                </div>
+                                                <p class="analytics__indicators-value">8.6<span>%</span></p>
+                                            </div>
+                                            <p class="analytics__period">За год</p>
+                                        </div>
+                                        <div class="analytics__percentage-item analytics__percentage-item-white">
+                                            <p class="analytics__percentage-title">Новостройки</p>
+                                            <div class="analytics__indices-indicators minus">
+                                                <div class="analytics__indicator-arrow-plus analytics__indicator-arrow">
+                                                    <img src="img/indicator-arrow2.svg" />
+                                                </div>
+                                                <div
+                                                    class="analytics__indicator-arrow-minus analytics__indicator-arrow"
+                                                >
+                                                    <img src="img/indicator-arrow2.svg" />
+                                                </div>
+                                                <p class="analytics__indicators-value">8.6<span>%</span></p>
+                                            </div>
+                                            <p class="analytics__period">За год</p>
+                                        </div>
+                                    </div>
+                                    <div class="oval-link analytics__oval">
+                                        <svg
+                                            width="64"
+                                            height="48"
+                                            viewBox="0 0 64 48"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48H40C53.2548 48 64 37.2548 64 24C64 10.7452 53.2548 0 40 0H24ZM41.2567 23.6L34.0567 16.4H30.6007L36.5527 22.352H24.3367V24.848H36.5527L30.6007 30.8H34.0567L41.2567 23.6Z"
+                                                fill="#000"
+                                            ></path>
+                                        </svg></div
+                                ></a>
+                            </div>
+                        </div>
+                        <div class="wrap-news">
+                            <div class="row-title">
+                                <h2 class="title-h2 main-page-title">Новости</h2>
+                                <button class="button-all-section main-page-button-all-section" type="button">
+                                    Все новости
+                                </button>
+                            </div>
+                            <div class="grid-row-3-col news">
+                                <a class="grid-row-3-col__item news__item" href="#"
+                                    ><div class="news__body">
+                                        <div class="news__img">
+                                            <picture
+                                                ><source srcset="img/newsImg.jpg 1x, img/newsImg-2x.jpg 2x"/>
+                                                <img src="img/newsImg.jpg" alt=""
+                                            /></picture>
+                                        </div>
+                                        <p class="header-with-bullet color-js">Интересное по рынку</p>
+                                        <p class="news__title color-js">
+                                            Запуски новых проектов многоквартирного жилья в&nbsp;РФ в&nbsp;апреле
+                                            удвоились
+                                        </p>
+                                        <div class="news__release-date color-js">
+                                            <p class="news__date color-js">24</p>
+                                            <p class="news__month color-js">Июня</p>
+                                        </div>
+                                    </div></a
+                                ><a class="grid-row-3-col__item news__item" href="#"
+                                    ><div class="news__body">
+                                        <div class="news__img">
+                                            <picture
+                                                ><source srcset="img/newsImg.jpg 1x, img/newsImg-2x.jpg 2x"/>
+                                                <img src="img/newsImg.jpg" alt=""
+                                            /></picture>
+                                        </div>
+                                        <p class="header-with-bullet color-js">Новости компании</p>
+                                        <p class="news__title color-js">
+                                            В России стартовал конкурс дом.рф на&nbsp;лучшие типовые проекты ИЖС
+                                        </p>
+                                        <div class="news__release-date">
+                                            <p class="news__date color-js">20</p>
+                                            <p class="news__month color-js">Июня</p>
+                                        </div>
+                                    </div></a
+                                ><a class="grid-row-3-col__item news__item" href="#"
+                                    ><div class="news__body">
+                                        <div class="news__img">
+                                            <picture
+                                                ><source srcset="img/newsImg.jpg 1x, img/newsImg-2x.jpg 2x"/>
+                                                <img src="img/newsImg.jpg" alt=""
+                                            /></picture>
+                                        </div>
+                                        <p class="header-with-bullet color-js">Новости компании</p>
+                                        <p class="news__title color-js">
+                                            Дом.рф обозначил приоритеты работы в&nbsp;Уральском федеральном округе
+                                        </p>
+                                        <div class="news__release-date">
+                                            <p class="news__date color-js">18</p>
+                                            <p class="news__month color-js">Июня</p>
+                                        </div>
+                                    </div></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="search-global">
+                <div class="search-global__background"></div>
+                <div class="search-global__headline">
+                    <span class="search-global__title">Поиск</span
+                    ><button class="icon-round icon-round_white icon-round_border search-global__closer">
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M0.357542 15.3637C-0.0329827 15.7543 -0.0329827 16.3874 0.357542 16.778C0.748066 17.1685 1.38123 17.1685 1.77176 16.778L8.13551 10.4142L14.4995 16.7782C14.89 17.1687 15.5232 17.1687 15.9137 16.7782C16.3042 16.3876 16.3042 15.7545 15.9137 15.364L9.54972 8.99999L15.9139 2.63582C16.3044 2.24529 16.3044 1.61213 15.9139 1.2216C15.5234 0.83108 14.8902 0.83108 14.4997 1.2216L8.13551 7.58577L1.77156 1.22182C1.38104 0.8313 0.747871 0.8313 0.357346 1.22182C-0.0331781 1.61235 -0.0331778 2.24551 0.357346 2.63604L6.7213 8.99999L0.357542 15.3637Z"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-global__wrapper">
+                    <div class="search-global__for-open"></div>
+                    <form class="search-global__form search-global_all__form" action="">
+                        <div class="search-global__icon">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M20.2962 3.48232C15.6532 -1.16077 8.12532 -1.16077 3.48228 3.48232C-1.16076 8.12541 -1.16076 15.6533 3.48228 20.2964C7.71761 24.5318 14.3534 24.9037 19.0103 21.4122L25.1005 27.5025C25.7638 28.1658 26.8392 28.1658 27.5025 27.5025C28.1658 26.8392 28.1658 25.7638 27.5025 25.1005L21.4122 19.0101C24.9034 14.3532 24.5314 7.71759 20.2962 3.48232ZM5.88427 5.88433C9.20073 2.56784 14.5778 2.56784 17.8942 5.88433C21.2107 9.20083 21.2107 14.5779 17.8942 17.8944C14.5778 21.2109 9.20073 21.2109 5.88427 17.8944C2.56781 14.5779 2.56781 9.20083 5.88427 5.88433Z"
+                                    fill="#1C1B28"
+                                ></path>
+                            </svg>
+                        </div>
+                        <input class="search-global__input" type="search" name="" placeholder="Поиск" />
+                        <div class="search-global__cleaner">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0.821652 0.821163C1.47253 0.170289 2.5278 0.170289 3.17867 0.821163L12.0002 9.64265L20.8217 0.821163C21.4725 0.170289 22.5278 0.170289 23.1787 0.821163C23.8295 1.47204 23.8295 2.52731 23.1787 3.17819L14.3572 11.9997L23.1787 20.8212C23.8296 21.472 23.8296 22.5273 23.1787 23.1782C22.5278 23.8291 21.4725 23.8291 20.8217 23.1782L12.0002 14.3567L3.17867 23.1782C2.5278 23.8291 1.47253 23.8291 0.821651 23.1782C0.170778 22.5273 0.170778 21.472 0.821651 20.8212L9.64314 11.9997L0.821652 3.17819C0.170778 2.52731 0.170778 1.47204 0.821652 0.821163Z"
+                                    fill="#686D82"
+                                ></path>
+                            </svg>
+                        </div>
+                    </form>
+                </div>
+                <div class="search-global__list"></div>
+                <span class="search-global__nothing">Ничего не найдено</span>
+            </div>
+            <!-- для отображения добавить класс show-->
+            <div class="cookies js--cookies">
+                <span class="cookies__title">На сайте используются файлы cookie</span
+                ><span class="cookies__text"
+                    >Оставаясь на сайте, вы соглашаетесь с нашей
+                    <a href="privacy-policy.html"> Политикой конфиденциальности</a></span
+                ><button class="btn cookies__btn">Подтвердить</button>
+            </div>
+            <footer class="footer-page">
+                <div class="container-block">
+                    <div class="footer-page__top footer-page__row">
+                        <div class="footer-page__row-col">
+                            <div class="footer-page__logo">
+                                <picture
+                                    ><source srcset="img/logo-3-dom-rf.svg" media="(max-width: 767px)"/>
+                                    <img src="img/logo-3-dom-rf.svg" alt=""
+                                /></picture>
+                            </div>
+                            <div class="footer-page__contact">
+                                <div class="footer-page__contact-wrap">
+                                    <p class="footer-page__title">Телефон компании</p>
+                                    <a class="footer-page__tel" href="tel:8 (800) 775-11-22">8 (800) 775-11-22</a>
+                                </div>
+                                <div class="footer-page__contact-wrap">
+                                    <p class="footer-page__title">Консультационный центр</p>
+                                    <a class="footer-page__value" href="tel:8 (800) 775-11-22">8 (800) 775-11-22</a>
+                                </div>
+                                <div class="footer-page__contact-wrap">
+                                    <p class="footer-page__title">Адрес</p>
+                                    <p class="footer-page__value">Москва, Воздвиженка,10</p>
+                                </div>
+                            </div>
+                            <div class="footer-page__social">
+                                <a class="footer-page__social-item" href="#"
+                                    ><svg
+                                        width="20"
+                                        height="16"
+                                        viewBox="0 0 20 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M1.3749 6.8879C6.74359 4.62993 10.3236 3.14134 12.1148 2.42212C17.2292 0.36862 18.2919 0.0119045 18.9846 0.00012559C19.1369 -0.00246506 19.4776 0.0339819 19.6982 0.206816C19.8845 0.352754 19.9358 0.549895 19.9603 0.68826C19.9848 0.826626 20.0154 1.14183 19.9911 1.38811C19.714 4.1992 18.5147 11.021 17.9046 14.1694C17.6465 15.5017 17.1382 15.9484 16.6461 15.9921C15.5766 16.0871 14.7645 15.3098 13.7287 14.6543C12.1078 13.6287 11.1921 12.9902 9.61879 11.9893C7.80053 10.8327 8.97923 10.1969 10.0154 9.15799C10.2866 8.88609 14.9987 4.74867 15.0899 4.37335C15.1013 4.32641 15.1119 4.15143 15.0042 4.05904C14.8965 3.96664 14.7376 3.99824 14.6229 4.02337C14.4604 4.05898 11.871 5.71112 6.85486 8.97978C6.11988 9.46697 5.45416 9.70435 4.8577 9.69191C4.20015 9.6782 2.93528 9.33301 1.99498 9.03795C0.84166 8.67605 -0.074973 8.48471 0.00484519 7.87009C0.0464194 7.54996 0.503103 7.22256 1.3749 6.8879Z"
+                                            fill="black"
+                                        ></path></svg></a
+                                ><a class="footer-page__social-item" href="#"
+                                    ><svg
+                                        width="9"
+                                        height="19"
+                                        viewBox="0 0 9 19"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M6 10.925H8.14286L9 7.125H6V5.225C6 4.2465 6 3.325 7.71429 3.325H9V0.133C8.72057 0.0921501 7.66543 0 6.55114 0C4.224 0 2.57143 1.57415 2.57143 4.465V7.125H0V10.925H2.57143V19H6V10.925Z"
+                                            fill="black"
+                                        ></path></svg></a
+                                ><a class="footer-page__social-item" href="#"
+                                    ><svg
+                                        width="19"
+                                        height="12"
+                                        viewBox="0 0 19 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M15.8107 6.435C16.0004 6.07303 16.6721 5.03539 17.1778 4.26319C18.695 1.97876 18.9716 1.49614 18.9716 1.20656C18.9716 0.984441 18.7947 0.804375 18.5765 0.804375H15.0205C14.8303 0.805086 14.6676 0.943687 14.6333 1.13417C14.4358 2.24421 11.8755 5.42953 11.4725 5.63063C11.3065 5.63063 11.0774 5.21235 11.0774 4.42406V1.0296C11.1212 0.764151 11.0523 0.492233 10.8877 0.281531C10.619 0 10.216 0 9.09392 0C7.05517 0 6.32817 0.619369 6.32817 1.20656C6.31939 1.30876 6.35268 1.41007 6.4201 1.48632C6.48752 1.56257 6.58301 1.60691 6.68377 1.60875C6.68377 1.60875 7.11838 1.89833 7.11838 3.61969C7.14073 4.29176 7.10636 4.96454 7.01566 5.63063C6.01209 5.44562 4.62131 2.89575 3.95753 1.06178C3.89553 0.897064 3.73533 0.792698 3.56243 0.804375H0.401573C0.283212 0.802404 0.170218 0.854558 0.0936849 0.946486C0.0171515 1.03841 -0.0148572 1.16043 0.00646651 1.27896C0.448986 3.70817 5.46684 11.2613 8.69881 11.2613H10.2792C11.1169 11.2613 11.1801 10.3362 11.2275 9.7249C11.2749 9.11357 11.3144 8.84813 11.4646 8.84813C11.9545 8.84813 12.9581 9.73294 13.6139 10.3121C14.2698 10.8912 14.6965 11.2613 15.0205 11.2613H16.996C18.0154 11.2613 18.9716 11.2613 18.9716 10.4569C18.9716 10.1512 18.7108 9.79729 17.2094 8.04375C16.7116 7.48874 16.0399 6.72458 15.8107 6.435Z"
+                                            fill="black"
+                                        ></path></svg></a
+                                ><a class="footer-page__social-item" href="#"
+                                    ><svg
+                                        width="20"
+                                        height="16"
+                                        viewBox="0 0 20 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z"
+                                            fill="black"
+                                        ></path></svg></a
+                                ><a class="footer-page__social-item" href="#"
+                                    ><svg
+                                        width="18"
+                                        height="18"
+                                        viewBox="0 0 18 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 0C11.4453 0 11.7504 0.00899995 12.7098 0.0539999C13.6683 0.0989999 14.3208 0.2493 14.895 0.4725C15.489 0.7011 15.9894 1.0107 16.4898 1.5102C16.9474 1.96011 17.3016 2.50433 17.5275 3.105C17.7498 3.6783 17.901 4.3317 17.946 5.2902C17.9883 6.2496 18 6.5547 18 9C18 11.4453 17.991 11.7504 17.946 12.7098C17.901 13.6683 17.7498 14.3208 17.5275 14.895C17.3022 15.496 16.948 16.0404 16.4898 16.4898C16.0398 16.9473 15.4956 17.3014 14.895 17.5275C14.3217 17.7498 13.6683 17.901 12.7098 17.946C11.7504 17.9883 11.4453 18 9 18C6.5547 18 6.2496 17.991 5.2902 17.946C4.3317 17.901 3.6792 17.7498 3.105 17.5275C2.50409 17.302 1.95977 16.9478 1.5102 16.4898C1.05247 16.04 0.698338 15.4957 0.4725 14.895C0.2493 14.3217 0.0989999 13.6683 0.0539999 12.7098C0.0116999 11.7504 0 11.4453 0 9C0 6.5547 0.00899995 6.2496 0.0539999 5.2902C0.0989999 4.3308 0.2493 3.6792 0.4725 3.105C0.697713 2.50396 1.05192 1.95959 1.5102 1.5102C1.9599 1.05231 2.50419 0.698156 3.105 0.4725C3.6792 0.2493 4.3308 0.0989999 5.2902 0.0539999C6.2496 0.0116999 6.5547 0 9 0ZM9 4.5C7.80653 4.5 6.66193 4.97411 5.81802 5.81802C4.97411 6.66193 4.5 7.80653 4.5 9C4.5 10.1935 4.97411 11.3381 5.81802 12.182C6.66193 13.0259 7.80653 13.5 9 13.5C10.1935 13.5 11.3381 13.0259 12.182 12.182C13.0259 11.3381 13.5 10.1935 13.5 9C13.5 7.80653 13.0259 6.66193 12.182 5.81802C11.3381 4.97411 10.1935 4.5 9 4.5V4.5ZM14.85 4.275C14.85 3.97663 14.7315 3.69048 14.5205 3.4795C14.3095 3.26853 14.0234 3.15 13.725 3.15C13.4266 3.15 13.1405 3.26853 12.9295 3.4795C12.7185 3.69048 12.6 3.97663 12.6 4.275C12.6 4.57337 12.7185 4.85952 12.9295 5.0705C13.1405 5.28147 13.4266 5.4 13.725 5.4C14.0234 5.4 14.3095 5.28147 14.5205 5.0705C14.7315 4.85952 14.85 4.57337 14.85 4.275ZM9 6.3C9.71608 6.3 10.4028 6.58446 10.9092 7.09081C11.4155 7.59716 11.7 8.28392 11.7 9C11.7 9.71608 11.4155 10.4028 10.9092 10.9092C10.4028 11.4155 9.71608 11.7 9 11.7C8.28392 11.7 7.59716 11.4155 7.09081 10.9092C6.58446 10.4028 6.3 9.71608 6.3 9C6.3 8.28392 6.58446 7.59716 7.09081 7.09081C7.59716 6.58446 8.28392 6.3 9 6.3V6.3Z"
+                                            fill="black"
+                                        ></path></svg
+                                ></a>
+                            </div>
+                        </div>
+                        <div class="footer-page__row-col">
+                            <ul class="footer-page__nav">
+                                <li><p class="footer-page__title">Для людей</p></li>
+                                <li><a class="footer-page__value" href="#">Ипотека</a></li>
+                                <li><a class="footer-page__value" href="#">Покупка недвижимости</a></li>
+                                <li><a class="footer-page__value" href="#">Аренда</a></li>
+                                <li><a class="footer-page__value" href="#">Банк</a></li>
+                                <li><a class="footer-page__value" href="#">Проверка застройщика</a></li>
+                                <li><a class="footer-page__value" href="#">Сервисы</a></li>
+                                <li><a class="footer-page__value" href="#">Индекс цен</a></li>
+                            </ul>
+                            <ul class="footer-page__nav">
+                                <li><p class="footer-page__title">О компании</p></li>
+                                <li><a class="footer-page__value" href="#">Что такое дом.рф</a></li>
+                                <li><a class="footer-page__value" href="#">Корпоративное управление</a></li>
+                                <li><a class="footer-page__value" href="#">Закупки</a></li>
+                                <li><a class="footer-page__value" href="#">Инсайдерам</a></li>
+                                <li><a class="footer-page__value" href="#">Фирменный стиль</a></li>
+                                <li><a class="footer-page__value" href="#">Социальная ответственность</a></li>
+                                <li><a class="footer-page__value" href="#">Карьера</a></li>
+                            </ul>
+                            <ul class="footer-page__nav">
+                                <li><p class="footer-page__title">Новости</p></li>
+                                <li><a class="footer-page__value" href="#">Новости</a></li>
+                                <li><a class="footer-page__value" href="#">Медиатека</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-page__row-col">
+                            <ul class="footer-page__nav">
+                                <li><p class="footer-page__title">Для бизнеса</p></li>
+                                <li><a class="footer-page__value" href="#">Банк</a></li>
+                                <li><a class="footer-page__value" href="#">Реализация земли и объектов</a></li>
+                                <li><a class="footer-page__value" href="#">Покупка недвижимости</a></li>
+                                <li><a class="footer-page__value" href="#">ЕИСЖС</a></li>
+                                <li><a class="footer-page__value" href="#">Управление активами</a></li>
+                                <li><a class="footer-page__value" href="#">Управление проектами</a></li>
+                            </ul>
+                            <ul class="footer-page__nav">
+                                <li><p class="footer-page__title">Аналитика</p></li>
+                                <li><a class="footer-page__value" href="#">Жилищное строительство</a></li>
+                                <li><a class="footer-page__value" href="#">Ипотека</a></li>
+                                <li><a class="footer-page__value" href="#">ИЦБ</a></li>
+                                <li><a class="footer-page__value" href="#">Соцопросы</a></li>
+                                <li><a class="footer-page__value" href="#">Интересное по рынку</a></li>
+                                <li><a class="footer-page__value" href="#">Архив</a></li>
+                            </ul>
+                            <ul class="footer-page__nav">
+                                <li><p class="footer-page__title">Контакты</p></li>
+                                <li><a class="footer-page__value" href="#">Напишите нам</a></li>
+                                <li><a class="footer-page__value" href="#">Пресс-центр</a></li>
+                                <li><a class="footer-page__value" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-page__row-col">
+                            <ul class="footer-page__nav">
+                                <li><p class="footer-page__title">Для страны</p></li>
+                                <li><a class="footer-page__value" href="#">Цифровые технологии</a></li>
+                                <li><a class="footer-page__value" href="#">Инфраструктурные облигации</a></li>
+                                <li><a class="footer-page__value" href="#">Ипотечные облигации</a></li>
+                                <li><a class="footer-page__value" href="#">Городская среда</a></li>
+                            </ul>
+                            <ul class="footer-page__nav">
+                                <li><p class="footer-page__title">Инвесторам</p></li>
+                                <li><a class="footer-page__value" href="#">Информация для инвесторов</a></li>
+                                <li><a class="footer-page__value" href="#">Финансовые результаты и отчётность</a></li>
+                                <li><a class="footer-page__value" href="#">Раскрытие информации</a></li>
+                                <li><a class="footer-page__value" href="#">Кредитные рейтинги</a></li>
+                                <li><a class="footer-page__value" href="#">Ценные бумаги</a></li>
+                                <li><a class="footer-page__value" href="#">Облигации с ипотечным покрытием</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-page__bottom footer-page__row">
+                        <div class="footer-page__bottom-col">
+                            <a class="footer-page__bottom-link" href="#"
+                                >Предоставление доступа к&nbsp;информационным системам</a
+                            >
+                        </div>
+                        <div class="footer-page__bottom-col">
+                            <a class="footer-page__bottom-link" href="#"
+                                >Профессиональный участник рынка&nbsp;ценных бумаг</a
+                            >
+                        </div>
+                        <div class="footer-page__bottom-col">
+                            <a class="footer-page__bottom-link" href="#">Антикоррупционная деятельность</a>
+                        </div>
+                        <div class="footer-page__bottom-col">
+                            <a class="footer-page__bottom-link" href="#">Раскрытие информации</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="modal" id="modalcall">
+                <div class="modal__wrapper">
+                    <button class="modal__closer icon-round icon-round_white icon-round_border js--modal-closer">
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M0.357542 15.3637C-0.0329827 15.7543 -0.0329827 16.3874 0.357542 16.778C0.748066 17.1685 1.38123 17.1685 1.77176 16.778L8.13551 10.4142L14.4995 16.7782C14.89 17.1687 15.5232 17.1687 15.9137 16.7782C16.3042 16.3876 16.3042 15.7545 15.9137 15.364L9.54972 8.99999L15.9139 2.63582C16.3044 2.24529 16.3044 1.61213 15.9139 1.2216C15.5234 0.83108 14.8902 0.83108 14.4997 1.2216L8.13551 7.58577L1.77156 1.22182C1.38104 0.8313 0.747871 0.8313 0.357346 1.22182C-0.0331781 1.61235 -0.0331778 2.24551 0.357346 2.63604L6.7213 8.99999L0.357542 15.3637Z"
+                            ></path>
+                        </svg></button
+                    ><span class="modal__title">Звоните по&nbsp;телефону</span
+                    ><a class="modal__main-link" href="tel:+78007751122"
+                        ><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#8BC540"></circle>
+                            <path
+                                d="M22.5338 20.5326C21.7784 22.3398 20.0009 22.6657 19.4233 22.6657C19.2603 22.6657 16.609 22.799 12.8024 19.1995C9.75113 16.2962 9.36602 13.1706 9.33639 12.5781C9.30677 12.0004 9.4697 10.5487 11.4693 9.46741C11.7211 9.33409 12.2099 9.27484 12.3284 9.40816C12.3876 9.46741 14.0614 12.2226 14.1058 12.3115C14.1503 12.4004 14.1651 12.4892 14.1651 12.5781C14.1651 12.6966 14.0762 12.8596 13.8984 13.0521C13.7207 13.2447 13.5282 13.4076 13.3208 13.5706C13.1134 13.7335 12.9209 13.8965 12.7283 14.0742C12.5506 14.252 12.4617 14.4001 12.4617 14.5038C12.4765 14.8001 12.7135 15.8518 14.5502 17.4664C16.3868 19.0662 17.2607 19.5254 17.3496 19.555C17.4385 19.5846 17.5125 19.5994 17.557 19.5994C17.6755 19.5994 17.8088 19.5106 17.9865 19.3328C18.1643 19.155 18.7567 18.3403 18.9493 18.1626C19.1418 17.9848 19.29 17.896 19.4233 17.896C19.5121 17.896 19.601 17.9108 19.6899 17.9552C19.7788 17.9996 22.5338 19.6142 22.593 19.6735C22.7411 19.8216 22.6374 20.2808 22.5338 20.5326Z"
+                                fill="white"
+                            ></path></svg
+                        ><span>8 800 775-11-22</span></a
+                    ><span class="modal__desc">Или закажите обратный звонок</span>
+                    <form class="js--call" action="" novalidate>
+                        <div class="modal__row">
+                            <div class="select js--select">
+                                <div class="select__background js--select-background"></div>
+                                <div class="select__choosen select__choosen_bordered js--select-place">Тема 1</div>
+                                <input type="hidden" value="" />
+                                <div class="select__list-wrapper">
+                                    <ul class="select__list">
+                                        <li class="select__list-item js--select-item" data-value="">Общие вопросы</li>
+                                        <li class="select__list-item js--select-item" data-value="">
+                                            Федеральные программы поддержки
+                                        </li>
+                                        <li class="select__list-item js--select-item" data-value="">
+                                            Оформление собственности
+                                        </li>
+                                        <li class="select__list-item js--select-item" data-value="">
+                                            Реструктуризация долга
+                                        </li>
+                                        <li class="select__list-item js--select-item" data-value="">Продажа</li>
+                                        <li class="select__list-item js--select-item" data-value="">Ипотека</li>
+                                        <li class="select__list-item js--select-item" data-value="">Эксплуатация</li>
+                                        <li class="select__list-item js--select-item" data-value="">Аренда</li>
+                                        <li class="select__list-item js--select-item" data-value="">Покупка</li>
+                                        <li class="select__list-item js--select-item" data-value="">
+                                            Земельные участки
+                                        </li>
+                                        <li class="select__list-item js--select-item" data-value="">Льготы</li>
+                                        <li class="select__list-item js--select-item" data-value="">
+                                            Программа помощи многодетным семьям
+                                        </li>
+                                        <li class="select__list-item js--select-item" data-value="">Меры поддержки</li>
+                                        <li class="select__list-item js--select-item" data-value="">
+                                            Ипотечные каникулы
+                                        </li>
+                                        <li class="select__list-item js--select-item" data-value="">
+                                            Банковские ставки
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__row">
+                            <label class="input input_bordered"
+                                ><input class="js--call-name" type="text" placeholder="Имя" /><span class="input__error"
+                                    >Это поле обязательно для заполнения</span
+                                ></label
+                            >
+                        </div>
+                        <div class="modal__row">
+                            <label class="input input_bordered"
+                                ><input class="js--call-phone" type="tel" placeholder="Номер телефона" /><span
+                                    class="input__error"
+                                    >Это поле обязательно для заполнения</span
+                                ></label
+                            >
+                        </div>
+                        <div class="modal__bottom">
+                            <div class="modal__checkbox">
+                                <label class="checkbox"
+                                    ><input class="js--call-check" type="checkbox" name=""/>
+                                    <div></div></label
+                                ><span class="modal__checkbox-text"
+                                    >Я даю согласие на обработку
+                                    <a href="privacy-policy.html">персональных&nbsp;данных</a></span
+                                >
+                            </div>
+                            <button class="btn" type="submit">Заказать звонок</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal" id="modalchat">
+                <div class="modal__wrapper">
+                    <button class="modal__closer icon-round icon-round_white icon-round_border js--modal-closer">
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M0.357542 15.3637C-0.0329827 15.7543 -0.0329827 16.3874 0.357542 16.778C0.748066 17.1685 1.38123 17.1685 1.77176 16.778L8.13551 10.4142L14.4995 16.7782C14.89 17.1687 15.5232 17.1687 15.9137 16.7782C16.3042 16.3876 16.3042 15.7545 15.9137 15.364L9.54972 8.99999L15.9139 2.63582C16.3044 2.24529 16.3044 1.61213 15.9139 1.2216C15.5234 0.83108 14.8902 0.83108 14.4997 1.2216L8.13551 7.58577L1.77156 1.22182C1.38104 0.8313 0.747871 0.8313 0.357346 1.22182C-0.0331781 1.61235 -0.0331778 2.24551 0.357346 2.63604L6.7213 8.99999L0.357542 15.3637Z"
+                            ></path>
+                        </svg></button
+                    ><span class="modal__title">Остались вопросы? <br />Задавайте!</span>
+                    <form class="js--chat" action="" novalidate>
+                        <div class="modal__row">
+                            <div class="select js--select">
+                                <div class="select__background js--select-background"></div>
+                                <div class="select__choosen select__choosen_bordered js--select-place">Тема 1</div>
+                                <input type="hidden" value="Тема 1" />
+                                <div class="select__list-wrapper">
+                                    <ul class="select__list">
+                                        <li class="select__list-item js--select-item" data-value="Тема 1">Тема 1</li>
+                                        <li class="select__list-item js--select-item" data-value="Тема 2">Тема 2</li>
+                                        <li class="select__list-item js--select-item" data-value="Тема 3">Тема 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__row">
+                            <label class="input input_bordered"
+                                ><input class="js--chat-email" type="email" placeholder="E-mail" required /><span
+                                    class="input__error"
+                                    >Это поле обязательно для заполнения</span
+                                ></label
+                            >
+                        </div>
+                        <div class="modal__row">
+                            <label class="textarea textarea_bordered"
+                                ><textarea
+                                    class="js--chat-text"
+                                    name=""
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Ваш вопрос"
+                                ></textarea
+                                ><span class="textarea__error">Максимальное количество символов — 300</span></label
+                            >
+                        </div>
+                        <div class="modal__bottom">
+                            <div class="modal__checkbox">
+                                <label class="checkbox"
+                                    ><input class="js--chat-check" type="checkbox" name="" required/>
+                                    <div></div></label
+                                ><span class="modal__checkbox-text"
+                                    >Я даю согласие на обработку
+                                    <a href="privacy-policy.html">персональных&nbsp;данных</a></span
+                                >
+                            </div>
+                            <button class="btn" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- include footer-->
+        </div>
+        <script src="js/bundle.js"></script>
+    </body>
+</html>
