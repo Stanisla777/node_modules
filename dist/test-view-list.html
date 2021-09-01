@@ -606,14 +606,17 @@
             <main>
                 <div class="section-picture">
                     <picture
-                        ><source
+                        ><!--для мобильников-->
+                        <source
                             srcset="img/test-sectiom-img2_mobile.jpg 1x, img/test-sectiom-img2-2x_mobile.jpg 2x"
                             media="(max-width: 767px)"/>
+                        <!--для планшетов-->
                         <source
                             srcset="img/test-sectiom-img2_tablet.jpg 1x, img/test-sectiom-img2-2x_tablet.jpg 2x"
                             media="(max-width: 1243px)"/>
+                        <!--для больших экранов-->
                         <source srcset="img/test-sectiom-img2.jpg 1x, img/test-sectiom-img2-2x.jpg 2x"/>
-                        <img src="img/test-sectiom-img2.jpg" alt=""
+                        <!--та же картинка что и //для больших экранов--><img src="img/test-sectiom-img2.jpg" alt=""
                     /></picture>
                 </div>
                 <div class="container-middle white-back container-test">
