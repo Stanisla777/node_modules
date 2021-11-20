@@ -1,0 +1,171 @@
+/////////ƒл€ эксплорер
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.ie-flex(@flex:flex,@margin:0,@justify-content:flex-start,@align-items:stretch){
+  @supports not(display: grid) {
+    display: @flex;
+    flex-wrap: wrap;
+    align-items: @align-items;
+    justify-content: @justify-content;
+    margin-left: -@margin / 2;
+    margin-right: -@margin / 2;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    display: @flex;
+    flex-wrap: wrap;
+    align-items: @align-items;
+    justify-content: @justify-content;
+    margin-left: -@margin / 2;
+    margin-right: -@margin / 2;
+  }
+}
+
+//колонки имеют одинаковую ширину
+.ie-same-col(@count:3,@margin:0,@width:calc((100% - ((@margin * @count) + 2px))/@count)){
+  @supports not(display: grid) {
+    width: @width;
+    margin-right: @margin / 2;
+    margin-left: @margin / 2;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: @width;
+    margin-right: @margin / 2;
+    margin-left: @margin / 2;
+  }
+}
+
+//колонки имеют разную ширину, но последнн€€ расчитываетс€ исход€ из суммы предшествующих
+.ie-user-col-but-last(@count:3,@margin:0,@width_1:0,@width_2:0,@width_3:0,@width_4:0,@width_5:0,
+   @sumwidth:(@width_1 + @width_2 + @width_3 + @width_4 + @width_5)) {
+
+  @supports not(display: grid) {
+    &:first-child {
+      max-width: @width_1;
+    }
+    &:nth-child(2) {
+      max-width: @width_2;
+    }
+    &:nth-child(3) {
+      max-width: @width_3;
+    }
+    &:last-child {
+      max-width: calc(100% - (@sumwidth - ((@count - 1) * @margin)));
+    }
+    flex-shrink: 0;
+    width: 100%;
+    margin-right: @margin / 2;
+    margin-left: @margin / 2;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    &:first-child {
+      max-width: @width_1;
+    }
+    &:nth-child(2) {
+      max-width: @width_2;
+    }
+    &:nth-child(3) {
+      max-width: @width_3;
+    }
+    &:last-child {
+      max-width: calc(100% - (@sumwidth - ((@count - 1) * @margin)));
+    }
+    flex-shrink: 0;
+    width: 100%;
+    margin-right: @margin / 2;
+    margin-left: @margin / 2;
+  }
+}
+
+
+//колонки имеют разную ширину и последн€€ задаетс€ тоже пользоавателем
+.ie-all-user-col(@margin:0,@width_1:0,@width_2:0,@width_3:0,@width_4:0,@width_5:0){
+  @supports not(display: grid) {
+    &:first-child{
+      max-width: @width_1;
+    }
+    &:nth-child(2){
+      max-width: @width_2;
+    }
+    &:nth-child(3){
+      max-width: @width_3;
+    }
+    flex-shrink: 0;
+    width: 100%;
+    margin-right: @margin / 2;
+    margin-left: @margin / 2;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    &:first-child{
+      max-width: @width_1;
+    }
+    &:nth-child(2){
+      max-width: @width_2;
+    }
+    &:nth-child(3){
+      max-width: @width_3;
+    }
+    flex-shrink: 0;
+    width: 100%;
+    margin-right: @margin / 2;
+    margin-left: @margin / 2;
+  }
+}
+
+.pos-absolute(){
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.grid-gap(@count:20px){
+  grid-gap:@count;
+}
+.section-padding(@pad-top:30px,@pad-bot:30px){
+  padding-top: @pad-top;
+  padding-bottom: @pad-bot;
+}
+.fonsection(){
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.header-style() {
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
+}
+.history-circle(){
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top:50%;
+  transform: translate(50%,-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: @main-color;
+}
+
+@main-color:#2a3dbb;
+@font-size-1:13px;
+@border-line-color:#f5f5f5;
+@border-line-color-2:#efefef;
+@color-text:#141c28;
+@color-detail:#2a3dbb;
+@color-sections:#f5f5f5;
+@height-tab-line:8px;
+.border-bottom-section{
+  border-bottom: 2px solid #f5f5f5;
+}

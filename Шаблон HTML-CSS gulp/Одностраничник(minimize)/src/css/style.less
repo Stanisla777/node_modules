@@ -1,0 +1,149 @@
+//Файлы css которые должны подключаться в файл style.css должны хранится в папке partcss
+//тут подключаются @import url("../partcss/name.css");
+//в
+
+@import url("../partcss/fonts.css");
+@import url("mixin.less");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0;
+  background: #fff;
+  height: 100%;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  cursor: default;
+  font-size: 12px;
+  line-height: normal;
+  width: 100%;
+  //margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+.footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+section,header,footer{
+  display: block;
+  position: relative;
+}
+
+.container {
+  zoom: 1;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+
+a{
+  display: block;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a img {
+  text-decoration: none;
+}
+
+a:focus,a:hover,a:link,
+a:active {
+  outline: none;
+  text-decoration: none;
+  outline-width: 0;
+}
+a:hover{
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  font-family: 'OpenSans', sans-serif;
+}
+button:focus{
+  outline: none;
+}
+
+
+input{
+  position: relative;
+  display: block;
+  padding-left: 15px;
+  outline: none;
+}
+
+input:-moz-placeholder { color: #b7bfd2; }
+input::-webkit-input-placeholder { color: #b7bfd2;}
+
+textarea{/*Стили для поля ввода*/
+  padding-left: 15px;
+  resize: none;
+  outline: none;
+}
+textarea:-moz-placeholder { color: #a2a5b2; }
+textarea::-webkit-input-placeholder { color: #a2a5b2; }
+input:focus, textarea:focus{
+  outline: none;
+}
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
