@@ -1,0 +1,65 @@
+{
+  "_from": "Datepicker.js",
+  "_id": "Datepicker.js@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-kY1rEpj63fOZCIoz7FYybcCyb3k8qctuHnluJDgosVwoLMpfZqFGXhmj2OcEM52LGdo1E9sVLH2zF91RnPMAyw==",
+  "_location": "/Datepicker.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "Datepicker.js",
+    "name": "Datepicker.js",
+    "escapedName": "Datepicker.js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/Datepicker.js/-/Datepicker.js-0.1.1.tgz",
+  "_shasum": "68d0d4797a27bca325ed621260384de7ad7eae07",
+  "_spec": "Datepicker.js",
+  "_where": "D:\\РАБОТЫ\\ДомБанк\\Задания\\Спроси\\sprosi.dom.rf",
+  "author": {
+    "name": "Wil Wilsman"
+  },
+  "bugs": {
+    "url": "https://github.com/wwilsman/Datepicker.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A pure JS datepicker",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "rollup": "^0.56.2",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "homepage": "https://wwilsman.github.io/Datepicker.js",
+  "keywords": [
+    "datepicker",
+    "date",
+    "picker",
+    "pikaday"
+  ],
+  "license": "MIT",
+  "main": "dist/datepicker.js",
+  "name": "Datepicker.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwilsman/Datepicker.js.git"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "start": "rollup --config --watch",
+    "test": "phantomjs tests/run-jasmine.js tests/index.html"
+  },
+  "version": "0.1.1"
+}
