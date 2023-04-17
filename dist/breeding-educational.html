@@ -607,7 +607,8 @@
                             </div>
                         </div>
                         <div class="button btn-green education__title-btn js--scroll-to">Выбрать курс</div>
-                        <div class="education__title-advantage">
+                        <!--Добавил класс education__title-advantage-main-->
+                        <div class="education__title-advantage education__title-advantage-main">
                             <div class="education__title-advantage-item">
                                 <div class="education__title-advantage-img">
                                     <img src="img/education-free-icon.svg" alt="" />
@@ -900,173 +901,93 @@
                                         </div>
                                     </div>
                                     <div class="education__course-row-down">
-                                        <div class="swiper-container js--swiper-course">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <a
-                                                        class="education__course-item education__course-coming unactive"
-                                                        href="#"
-                                                        ><div class="education__course-coming-header">
-                                                            <div class="education__theme-dice"><p>бесплатно</p></div>
-                                                            <div class="education__grade">
-                                                                <div class="education__grade-icon">
-                                                                    <svg
-                                                                        width="22"
-                                                                        height="20"
-                                                                        viewbox="0 0 22 20"
-                                                                        fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                    >
-                                                                        <path
-                                                                            d="M10.0975 0.891367C10.4597 0.132245 11.5403 0.132245 11.9025 0.891367L14.2224 5.75315C14.3682 6.05865 14.6587 6.26967 14.9943 6.31391L20.335 7.01792C21.1689 7.12784 21.5028 8.15552 20.8928 8.7346L16.9858 12.4434C16.7403 12.6764 16.6294 13.0178 16.691 13.3507L17.6719 18.6476C17.825 19.4746 16.9508 20.1098 16.2116 19.7085L11.477 17.1389C11.1795 16.9774 10.8205 16.9774 10.523 17.1389L5.78844 19.7085C5.04919 20.1098 4.175 19.4746 4.32814 18.6476L5.30897 13.3507C5.3706 13.0178 5.25966 12.6764 5.01416 12.4434L1.10723 8.7346C0.497195 8.15552 0.831106 7.12784 1.66501 7.01792L7.00573 6.31391C7.34134 6.26967 7.63178 6.05865 7.77756 5.75315L10.0975 0.891367Z"
-                                                                            fill="#FED141"
-                                                                        ></path>
-                                                                    </svg>
-                                                                </div>
-                                                                <p class="education__grade-des">4.9</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="education__course-coming-wrap-des">
-                                                            <p class="education__course-coming-key">Курс</p>
-                                                            <h3 class="education__course-coming-title">
-                                                                Использование материнского капитала
-                                                            </h3>
-                                                        </div>
-                                                        <div class="education__course-coming-footer-img">
-                                                            <div class="education__course-coming-footer">
-                                                                <p class="education__course-coming-footer-des">
-                                                                    <span>5</span> модулей
-                                                                </p>
-                                                                <div
-                                                                    class="education__course-coming-footer-separator"
-                                                                ></div>
-                                                                <p class="education__course-coming-footer-des">
-                                                                    <span>6</span> часов
-                                                                </p>
-                                                            </div>
-                                                            <div class="education__course-coming-img">
-                                                                <picture
-                                                                    ><source
-                                                                        srcset="
-                                                                            img/course-img2.png    1x,
-                                                                            img/2x-course-img2.png 2x
-                                                                        "/>
-                                                                    <img src="img/course-img2.png" alt=""
-                                                                /></picture>
-                                                            </div></div
-                                                    ></a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a
-                                                        class="education__course-item education__course-coming unactive"
-                                                        href="#"
-                                                        ><div class="education__course-coming-header">
-                                                            <div class="education__theme-dice"><p>бесплатно</p></div>
-                                                            <div class="education__grade">
-                                                                <div class="education__grade-icon">
-                                                                    <svg
-                                                                        width="22"
-                                                                        height="20"
-                                                                        viewbox="0 0 22 20"
-                                                                        fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                    >
-                                                                        <path
-                                                                            d="M10.0975 0.891367C10.4597 0.132245 11.5403 0.132245 11.9025 0.891367L14.2224 5.75315C14.3682 6.05865 14.6587 6.26967 14.9943 6.31391L20.335 7.01792C21.1689 7.12784 21.5028 8.15552 20.8928 8.7346L16.9858 12.4434C16.7403 12.6764 16.6294 13.0178 16.691 13.3507L17.6719 18.6476C17.825 19.4746 16.9508 20.1098 16.2116 19.7085L11.477 17.1389C11.1795 16.9774 10.8205 16.9774 10.523 17.1389L5.78844 19.7085C5.04919 20.1098 4.175 19.4746 4.32814 18.6476L5.30897 13.3507C5.3706 13.0178 5.25966 12.6764 5.01416 12.4434L1.10723 8.7346C0.497195 8.15552 0.831106 7.12784 1.66501 7.01792L7.00573 6.31391C7.34134 6.26967 7.63178 6.05865 7.77756 5.75315L10.0975 0.891367Z"
-                                                                            fill="#FED141"
-                                                                        ></path>
-                                                                    </svg>
-                                                                </div>
-                                                                <p class="education__grade-des">4.9</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="education__course-coming-wrap-des">
-                                                            <p class="education__course-coming-key">Курс</p>
-                                                            <h3 class="education__course-coming-title">
-                                                                Покупка недвижимости
-                                                            </h3>
-                                                        </div>
-                                                        <div class="education__course-coming-footer-img">
-                                                            <div class="education__course-coming-footer">
-                                                                <p class="education__course-coming-footer-des">
-                                                                    <span>5</span> модулей
-                                                                </p>
-                                                                <div
-                                                                    class="education__course-coming-footer-separator"
-                                                                ></div>
-                                                                <p class="education__course-coming-footer-des">
-                                                                    <span>6</span> часов
-                                                                </p>
-                                                            </div>
-                                                            <div class="education__course-coming-img">
-                                                                <picture
-                                                                    ><source
-                                                                        srcset="
-                                                                            img/course-img3.png    1x,
-                                                                            img/2x-course-img3.png 2x
-                                                                        "/>
-                                                                    <img src="img/course-img3.png" alt=""
-                                                                /></picture>
-                                                            </div></div
-                                                    ></a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a
-                                                        class="education__course-item education__course-coming unactive"
-                                                        href="#"
-                                                        ><div class="education__course-coming-header">
-                                                            <div class="education__theme-dice"><p>бесплатно</p></div>
-                                                            <div class="education__grade">
-                                                                <div class="education__grade-icon">
-                                                                    <svg
-                                                                        width="22"
-                                                                        height="20"
-                                                                        viewbox="0 0 22 20"
-                                                                        fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                    >
-                                                                        <path
-                                                                            d="M10.0975 0.891367C10.4597 0.132245 11.5403 0.132245 11.9025 0.891367L14.2224 5.75315C14.3682 6.05865 14.6587 6.26967 14.9943 6.31391L20.335 7.01792C21.1689 7.12784 21.5028 8.15552 20.8928 8.7346L16.9858 12.4434C16.7403 12.6764 16.6294 13.0178 16.691 13.3507L17.6719 18.6476C17.825 19.4746 16.9508 20.1098 16.2116 19.7085L11.477 17.1389C11.1795 16.9774 10.8205 16.9774 10.523 17.1389L5.78844 19.7085C5.04919 20.1098 4.175 19.4746 4.32814 18.6476L5.30897 13.3507C5.3706 13.0178 5.25966 12.6764 5.01416 12.4434L1.10723 8.7346C0.497195 8.15552 0.831106 7.12784 1.66501 7.01792L7.00573 6.31391C7.34134 6.26967 7.63178 6.05865 7.77756 5.75315L10.0975 0.891367Z"
-                                                                            fill="#FED141"
-                                                                        ></path>
-                                                                    </svg>
-                                                                </div>
-                                                                <p class="education__grade-des">4.9</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="education__course-coming-wrap-des">
-                                                            <p class="education__course-coming-key">Курс</p>
-                                                            <h3 class="education__course-coming-title">
-                                                                Покупка недвижимости
-                                                            </h3>
-                                                        </div>
-                                                        <div class="education__course-coming-footer-img">
-                                                            <div class="education__course-coming-footer">
-                                                                <p class="education__course-coming-footer-des">
-                                                                    <span>5</span> модулей
-                                                                </p>
-                                                                <div
-                                                                    class="education__course-coming-footer-separator"
-                                                                ></div>
-                                                                <p class="education__course-coming-footer-des">
-                                                                    <span>6</span> часов
-                                                                </p>
-                                                            </div>
-                                                            <div class="education__course-coming-img">
-                                                                <picture
-                                                                    ><source
-                                                                        srcset="
-                                                                            img/course-img3.png    1x,
-                                                                            img/2x-course-img3.png 2x
-                                                                        "/>
-                                                                    <img src="img/course-img3.png" alt=""
-                                                                /></picture>
-                                                            </div></div
-                                                    ></a>
+                                        <a class="education__course-item education__course-coming unactive" href="#"
+                                            ><div class="education__course-coming-header">
+                                                <div class="education__theme-dice"><p>бесплатно</p></div>
+                                                <div class="education__grade">
+                                                    <div class="education__grade-icon">
+                                                        <svg
+                                                            width="22"
+                                                            height="20"
+                                                            viewbox="0 0 22 20"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M10.0975 0.891367C10.4597 0.132245 11.5403 0.132245 11.9025 0.891367L14.2224 5.75315C14.3682 6.05865 14.6587 6.26967 14.9943 6.31391L20.335 7.01792C21.1689 7.12784 21.5028 8.15552 20.8928 8.7346L16.9858 12.4434C16.7403 12.6764 16.6294 13.0178 16.691 13.3507L17.6719 18.6476C17.825 19.4746 16.9508 20.1098 16.2116 19.7085L11.477 17.1389C11.1795 16.9774 10.8205 16.9774 10.523 17.1389L5.78844 19.7085C5.04919 20.1098 4.175 19.4746 4.32814 18.6476L5.30897 13.3507C5.3706 13.0178 5.25966 12.6764 5.01416 12.4434L1.10723 8.7346C0.497195 8.15552 0.831106 7.12784 1.66501 7.01792L7.00573 6.31391C7.34134 6.26967 7.63178 6.05865 7.77756 5.75315L10.0975 0.891367Z"
+                                                                fill="#FED141"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="education__grade-des">4.9</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="education__pagination-course"></div>
+                                            <div class="education__course-coming-wrap-des">
+                                                <p class="education__course-coming-key">Курс</p>
+                                                <h3 class="education__course-coming-title">
+                                                    Использование материнского капитала
+                                                </h3>
+                                            </div>
+                                            <div class="education__course-coming-footer-img">
+                                                <div class="education__course-coming-footer">
+                                                    <p class="education__course-coming-footer-des">
+                                                        <span>5</span> модулей
+                                                    </p>
+                                                    <div class="education__course-coming-footer-separator"></div>
+                                                    <p class="education__course-coming-footer-des">
+                                                        <span>6</span> часов
+                                                    </p>
+                                                </div>
+                                                <div class="education__course-coming-img">
+                                                    <picture
+                                                        ><source
+                                                            srcset="img/course-img2.png 1x, img/2x-course-img2.png 2x"/>
+                                                        <img src="img/course-img2.png" alt=""
+                                                    /></picture>
+                                                </div></div></a
+                                        ><a class="education__course-item education__course-coming unactive" href="#"
+                                            ><div class="education__course-coming-header">
+                                                <div class="education__theme-dice"><p>бесплатно</p></div>
+                                                <div class="education__grade">
+                                                    <div class="education__grade-icon">
+                                                        <svg
+                                                            width="22"
+                                                            height="20"
+                                                            viewbox="0 0 22 20"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M10.0975 0.891367C10.4597 0.132245 11.5403 0.132245 11.9025 0.891367L14.2224 5.75315C14.3682 6.05865 14.6587 6.26967 14.9943 6.31391L20.335 7.01792C21.1689 7.12784 21.5028 8.15552 20.8928 8.7346L16.9858 12.4434C16.7403 12.6764 16.6294 13.0178 16.691 13.3507L17.6719 18.6476C17.825 19.4746 16.9508 20.1098 16.2116 19.7085L11.477 17.1389C11.1795 16.9774 10.8205 16.9774 10.523 17.1389L5.78844 19.7085C5.04919 20.1098 4.175 19.4746 4.32814 18.6476L5.30897 13.3507C5.3706 13.0178 5.25966 12.6764 5.01416 12.4434L1.10723 8.7346C0.497195 8.15552 0.831106 7.12784 1.66501 7.01792L7.00573 6.31391C7.34134 6.26967 7.63178 6.05865 7.77756 5.75315L10.0975 0.891367Z"
+                                                                fill="#FED141"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="education__grade-des">4.9</p>
+                                                </div>
+                                            </div>
+                                            <div class="education__course-coming-wrap-des">
+                                                <p class="education__course-coming-key">Курс</p>
+                                                <h3 class="education__course-coming-title">Покупка недвижимости</h3>
+                                            </div>
+                                            <div class="education__course-coming-footer-img">
+                                                <div class="education__course-coming-footer">
+                                                    <p class="education__course-coming-footer-des">
+                                                        <span>5</span> модулей
+                                                    </p>
+                                                    <div class="education__course-coming-footer-separator"></div>
+                                                    <p class="education__course-coming-footer-des">
+                                                        <span>6</span> часов
+                                                    </p>
+                                                </div>
+                                                <div class="education__course-coming-img">
+                                                    <picture
+                                                        ><source
+                                                            srcset="img/course-img3.png 1x, img/2x-course-img3.png 2x"/>
+                                                        <img src="img/course-img3.png" alt=""
+                                                    /></picture>
+                                                </div></div
+                                        ></a>
                                     </div>
                                 </div>
                             </div>
