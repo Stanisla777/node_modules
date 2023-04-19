@@ -812,6 +812,9 @@
                 <div class="white-back js--svg-hand-writing">
                     <div class="container">
                         <div class="block-container block-possibilities">
+                            <div class="block-stories">
+                                <div id="v-stories" v-cloak><v-stories></v-stories></div>
+                            </div>
                             <div class="block-banners">
                                 <div class="card-block-list card-list_2-col">
                                     <div
@@ -1353,15 +1356,6 @@
                                 ></a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div id="appKi">
-                        <key-indicators
-                            :title="`Господдержка в&amp;nbsp;цифрах`"
-                            :tabs-admin='[{"name":"Дальневосточная ипотека","key":"dfo","indicators":[{"name":"участников","value":17,"unit":"тыс. ","key":"loanCnt"},{"name":"кредиторов","value":14,"unit":"","key":"creditorCnt"},{"name":"сумма выданных кредитов","value":61.5,"unit":" млрд ","key":"loanAmt"}]},{"name":"Семейная ипотека","key":"family","indicators":[{"name":"участников","key":"loanCnt","value":129.4,"unit":"тыс."},{"name":"сумма выданных кредитов","key":"loanAmt","value":344.3,"unit":"млрд. "}]}]'
-                            :path="`img`"
-                        ></key-indicators>
                     </div>
                 </div>
                 <div class="white-back">
@@ -2347,28 +2341,24 @@
                 chatMessagePlaceholder: "Введите сообщение",
                 showChannelPanel: true,
                 channelPanelHeader:
-                    "Вас приветствует команда поддержки «МыСчитаем!»  Напишите свой вопрос и мы вам поможем его решить! Если у вас уже есть ID участника, сообщите его, чтобы мы смогли быстрее вам помочь.",
-                title: "Бот СпросиДомРФ",
-                enableFileUpload: false,
-                srcUrl: "/dist/img",
-                footerImageLogo: false
+                    "Вас приветствует Консультационный центр ДОМ.РФ! У вас появились вопросы о жилье – спросите нас!",
+                title: "Бот СпросиДомРФ"
             };
             window.beesenderchatconfig.channelsInPanel = [
                 {
                     type: "widget",
                     name: "Продолжить на сайте:"
+                },
+                {
+                    type: "telegram",
+                    name: "Telegram",
+                    link: "https://t.me/BeesenderSupportBot"
                 }
-                // {
-                //     type: "telegram",
-                //     name: "Telegram",
-                //     link: "https://t.me/BeesenderSupportBot"
-                // }
             ];
             window.beesenderchatconfig.channelId = "dce8a88b-d1df-4707-b3a4-550fcc0b157f";
             window.beesenderchatconfig.connectorUrl = "https://crm-bsndr.domrf.ru/domcctest";
         </script>
-        <!--script(src='https://widget.beesender.com/3.0/widget.js' async='')--><!--script(src='https://widget.beesender.com/3.0/chunk-vendors.js' async='')-->
-        <script src="../local/templates/main/js/beesenderchat/beesender.js" async=""></script>
-        <script src="../local/templates/main/js/beesenderchat/beesender-chunk.js" async=""></script>
+        <script src="https://widget.beesender.com/3.0_old_new/widget.js" async=""></script>
+        <script src="https://widget.beesender.com/3.0_old_new/chunk-vendors.js" async=""></script>
     </body>
 </html>
