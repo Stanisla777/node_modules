@@ -1,7 +1,0 @@
-<svg width='48' height='48' fill='none' xmlns='http://www.w3.org/2000/svg'>
-    <circle cx='24' cy='24' r='23' fill='#1C1B28' stroke='#fff' stroke-width='2'/>
-    <path d='M16.223 31.778a1 1 0 010-1.414l14.142-14.142a1 1 0 011.414 1.414L17.637 31.778a1 1 0 01-1.414 0z'
-          fill='#fff'/>
-    <path d='M31.777 31.778a1 1 0 01-1.414 0L16.221 17.636a1 1 0 111.414-1.414l14.142 14.142a1 1 0 010 1.414z'
-          fill='#fff'/>
-</svg>
