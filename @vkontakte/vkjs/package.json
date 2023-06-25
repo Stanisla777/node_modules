@@ -1,0 +1,129 @@
+{
+  "_args": [
+    [
+      "@vkontakte/vkjs@0.20.0",
+      "D:\\РАБОТЫ\\ДомБанк\\Задания\\Спроси\\sprosi.dom.rf"
+    ]
+  ],
+  "_from": "@vkontakte/vkjs@0.20.0",
+  "_id": "@vkontakte/vkjs@0.20.0",
+  "_inBundle": false,
+  "_integrity": "sha512-bocEj9pcr6i6F0LN288xU3PX1MI4OJ3ZJXTa6kFx9IqEgk0CnoMtLAcuH2D7DzZAnc83DJCa/tuo9mT7XW035A==",
+  "_location": "/@vkontakte/vkjs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@vkontakte/vkjs@0.20.0",
+    "name": "@vkontakte/vkjs",
+    "escapedName": "@vkontakte%2fvkjs",
+    "scope": "@vkontakte",
+    "rawSpec": "0.20.0",
+    "saveSpec": null,
+    "fetchSpec": "0.20.0"
+  },
+  "_requiredBy": [
+    "/@vkontakte/superappkit"
+  ],
+  "_resolved": "https://registry.npmjs.org/@vkontakte/vkjs/-/vkjs-0.20.0.tgz",
+  "_spec": "0.20.0",
+  "_where": "D:\\РАБОТЫ\\ДомБанк\\Задания\\Спроси\\sprosi.dom.rf",
+  "author": {
+    "name": "VK Team",
+    "email": "https://vk.com/team"
+  },
+  "bugs": {
+    "url": "https://github.com/VKCOM/vkjs/issues"
+  },
+  "description": "VK shared JS libs",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/runtime": "^7.11.2",
+    "@jest/globals": "^26.6.2",
+    "@size-limit/preset-big-lib": "^4.9.1",
+    "@types/react": "^16.9.52",
+    "@typescript-eslint/eslint-plugin": "2.28.0",
+    "@vkontakte/eslint-config": "2.5.0",
+    "cross-env": "^7.0.2",
+    "eslint": "7.7.0",
+    "jest": "^26.6.3",
+    "pre-commit": "1.2.2",
+    "shx": "^0.3.2",
+    "size-limit": "^4.9.1",
+    "typescript": "3.9.7"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "src",
+    "build"
+  ],
+  "homepage": "https://github.com/VKCOM/vkjs#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "lib/es6/index.js",
+  "name": "@vkontakte/vkjs",
+  "pre-commit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VKCOM/vkjs.git"
+  },
+  "scripts": {
+    "babel": "cross-env NODE_ENV=production babel src/ --out-dir lib/ --source-maps --extensions .tsx,.jsx,.ts,.js --ignore **/*/__tests__",
+    "babel-es6": "cross-env NODE_ENV=production babel --config-file ./babel.es6.config.js src/ --out-dir lib/es6/ --source-maps --extensions .tsx,.jsx,.ts,.js --ignore **/*/__tests__",
+    "build": "yarn clear && yarn build-cjs && yarn build-es6",
+    "build-cjs": "yarn babel && yarn tsc",
+    "build-es6": "yarn babel-es6 && yarn tsc-es6",
+    "clear": "shx rm -rf lib",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn clear && yarn build",
+    "publish-package": "yarn install --check-files && yarn publish --non-interactive",
+    "size": "yarn clear && yarn build && size-limit",
+    "test": "eslint ./src --ext .ts && tsc --noEmit",
+    "test-jest": "jest",
+    "tsc": "cross-env NODE_ENV=production tsc --emitDeclarationOnly --declaration",
+    "tsc-es6": "cross-env NODE_ENV=production tsc --emitDeclarationOnly --declaration --outDir lib/es6/"
+  },
+  "size-limit": [
+    {
+      "name": "JS",
+      "path": "lib/index.js"
+    },
+    {
+      "name": "JS ES6",
+      "path": "lib/es6/index.js"
+    },
+    {
+      "name": "JS with querystring only import (no tree shaking)",
+      "path": "lib/index.js",
+      "import": "{ querystring }"
+    },
+    {
+      "name": "JS ES6 with querystring only import (tree shaking)",
+      "path": "lib/es6/index.js",
+      "import": "{ querystring }"
+    },
+    {
+      "name": "JS with leadingZero only import (no tree shaking)",
+      "path": "lib/index.js",
+      "import": "{ leadingZero }"
+    },
+    {
+      "name": "JS ES6 with leadingZero only import (tree shaking)",
+      "path": "lib/es6/index.js",
+      "import": "{ leadingZero }"
+    }
+  ],
+  "typings": "lib/index.d.ts",
+  "version": "0.20.0"
+}

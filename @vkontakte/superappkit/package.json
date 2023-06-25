@@ -1,0 +1,130 @@
+{
+  "_args": [
+    [
+      "@vkontakte/superappkit@1.60.0",
+      "D:\\РАБОТЫ\\ДомБанк\\Задания\\Спроси\\sprosi.dom.rf"
+    ]
+  ],
+  "_from": "@vkontakte/superappkit@1.60.0",
+  "_id": "@vkontakte/superappkit@1.60.0",
+  "_inBundle": false,
+  "_integrity": "sha512-eU8M/eRlZaF0hEi7zQyag4fDK1ftx9xtUO/2rbZNzfDX6wCrf37SfHv4cpcqBw2KewVYBmSfyI7nv4n+lwK8Ew==",
+  "_location": "/@vkontakte/superappkit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@vkontakte/superappkit@1.60.0",
+    "name": "@vkontakte/superappkit",
+    "escapedName": "@vkontakte%2fsuperappkit",
+    "scope": "@vkontakte",
+    "rawSpec": "1.60.0",
+    "saveSpec": null,
+    "fetchSpec": "1.60.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@vkontakte/superappkit/-/superappkit-1.60.0.tgz",
+  "_spec": "1.60.0",
+  "_where": "D:\\РАБОТЫ\\ДомБанк\\Задания\\Спроси\\sprosi.dom.rf",
+  "author": {
+    "name": "VK Team",
+    "email": "https://vk.com/team"
+  },
+  "dependencies": {
+    "@vkontakte/vkjs": "^0.20.0"
+  },
+  "description": "VK SuperAppKit",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.8.3",
+    "@babel/runtime": "^7.13.10",
+    "@rollup/plugin-alias": "^3.1.0",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-replace": "^3.0.0",
+    "@types/crypto-js": "4.1.1",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "5.0.0",
+    "@typescript-eslint/parser": "5.0.0",
+    "@vk-ecosystem/common": "0.0.19",
+    "@vkontakte/eslint-config": "3.0.0",
+    "@vkontakte/stylelint-config": "^1.2.0",
+    "autoprefixer": "^9.7.6",
+    "babel-jest": "^28.1.3",
+    "babel-preset-minify": "^0.5.1",
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.2",
+    "crypto-js": "4.1.1",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "jest-mock-fetch": "^2.0.5",
+    "lint-staged": "12.5.0",
+    "mitt": "^1.2.0",
+    "nanoid": "^3.0.2",
+    "node-static": "^0.7.11",
+    "rimraf": "3.0.2",
+    "rollup": "^1.32.1",
+    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "stylelint": "^13.3.0",
+    "stylelint-declaration-strict-value": "^1.1.8",
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "ttypescript": "^1.5.12",
+    "typedoc": "^0.22.5",
+    "typescript": "4.4",
+    "typescript-transform-paths": "^3.3.1",
+    "xhr-mock": "^2.5.1"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "engines": {
+    "yarn": ">=1.21.1 <=1.22.19"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "src/**/*.{ts,tsx}": "eslint --cache -- "
+  },
+  "main": "dist/index-cjs.js",
+  "module": "dist/index.js",
+  "name": "@vkontakte/superappkit",
+  "scripts": {
+    "build:dev": "concurrently --kill-others \"yarn build:ts -w\"",
+    "build:prod": "yarn clear && cross-env NODE_ENV=production yarn build:ts",
+    "build:ts": "rollup -c",
+    "check-es5": "eslint -c .eslintrc-es5.js dist/index-cjs.js --no-ignore --no-eslintrc",
+    "clear": "rimraf dist",
+    "clear:readme": "rimraf README.md",
+    "docs-server": "static ./gendocs",
+    "gendocs": "typedoc",
+    "lint": "eslint --cache \"./**/*.{ts,tsx}\"",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "prepublishOnly": "yarn clear:readme && yarn check-publish-version && yarn test && yarn lint && yarn build:prod && yarn check-es5 && yarn check-npm-version",
+    "test": "jest"
+  },
+  "types": "dist/index.d.ts",
+  "version": "1.60.0"
+}
