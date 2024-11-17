@@ -1,0 +1,399 @@
+extends ../templates/base
+block title
+    title= 'Меры поддержки'
+    meta(name="description" content="Описание главной страницы")
+block content
+    .pages-wrap
+        .pages-content.js--page-content
+            include ../includes/redesign-site/header
+            +header(0)
+            include ../includes/blocks/redesign-main-page/sidebar
+            main
+                .white-substrate
+                    .container-pages
+                        .block-container.block-page-stories
+                            #v-stories(v-cloak)
+                                v-stories
+                        .block-container.block-page-main
+                            h1.h1_title Ответимы на <span class="highlighting">все вопросы</span> о&nbsp;жилье
+
+                            .main-page-ya-searh
+                                .yandex-search.yandex-search__result-page.js--yandex-search-result
+                                    .yandex-search__container
+                                        .container
+                                            .block-container.yandex-search__block
+                                                // Яндекс.поиск по сайту - поисковая строка
+                                                #ya-site-form0.ya-site-form.ya-site-form_bg_transparent.ya-site-form_inited_yes(data-bem='{"action":"/search/","arrow":false,"bg":"transparent","fontsize":16,"fg":"#000000","language":"ru","logo":"rb","publicname":"спроси.дом.рф","suggest":true,"target":"_self","tld":"ru","type":2,"usebigdictionary":true,"searchid":5365372,"input_fg":"#000000","input_bg":"#ffffff","input_fontStyle":"normal","input_fontWeight":"normal","input_placeholder":"Поиск по статьям и материалам сайта","input_placeholderColor":"#000000","input_borderColor":"#999999"}')
+                                                    .ya-site-form__form
+                                                        table.ya-site-form__wrap(cellpadding='0', cellspacing='0' width="100%")
+                                                            tbody
+                                                                tr
+                                                                    td.ya-site-form__search-wrap
+                                                                        table.ya-site-form__search(cellpadding='0', cellspacing='0' width="100%")
+                                                                            tbody
+                                                                                tr
+                                                                                    td.ya-site-form__search-input
+                                                                                        table.ya-site-form__search-input-layout(width="100%")
+                                                                                            tbody
+                                                                                                tr
+                                                                                                    td.ya-site-form__search-input-layout-l(style="width:100%;")
+                                                                                                        .ya-site-form__input
+                                                                                                            input.ya-site-form__input-text(name='text', type='search', value='', placeholder='Поиск по статьям и материалам сайта', autocomplete='off' style="width:100%;")
+                                                                                                            .ya-site-suggest
+                                                                                                                .ya-site-suggest-popup(style='display: none;')
+                                                                                                                    i.ya-site-suggest__opera-gap
+                                                                                                                    .ya-site-suggest-list
+                                                                                                                        .ya-site-suggest__iframe
+                                                                                                                        ul.ya-site-suggest-items
+                                                                                                    td.ya-site-form__search-input-layout-r
+                                                                                                        input.ya-site-form__submit(type='button', value='Найти')
+                                                                                tr
+                                                                                    td.ya-site-form__gap
+                                                                                        .ya-site-form__gap-i
+
+
+
+                                                //доработка - поменял классы у буллитов + добавил троеточие
+                                                #ya_help_search.round-billet.center.no-wrap.js--ya-billet
+                                                    a.round-billet__item(data-search='Ипотека с господдержкой') ИЖС
+                                                    a.round-billet__item(data-search='Льготная ипотека') Кредитные каникулы
+                                                    a.round-billet__item(data-search='Семейная ипотека') Программа 450
+                                                    a.round-billet__item(data-search='Пособия') Ипотека
+                                                    a.round-billet__item(data-search='Материнский капитал') IT-ипотека
+                                                    a.round-billet__item(data-search='Пенсия') Льготы
+                                                    a.round-billet__item(data-search='Налоговые вычеты') Продажа
+                                                    a.round-billet__item(data-search='Материнский капитал') IT-ипотека
+                                                    a.round-billet__item(data-search='Пенсия') Льготы
+                                                    a.round-billet__item(data-search='Налоговые вычеты') Продажа
+
+                                                    a.round-billet__item.round-billet__item-else.js--round-billet-else ...
+
+
+                            .content-blocks
+                                .block-row.block-row__two-column-small-big(style="margin-top:40px;")
+                                    a(href="#").element-bunner.element-col.white-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Льготная ипотека до 8% на новостройки и ИЖС
+                                            .element-bunner__bottom
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new.webp', alt='', title='', loading='lazy')
+
+
+                                    a(href="#").element-bunner.element-col.black-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Ипотека 2023: жилье на выгодных условиях
+                                            .element-bunner__bottom
+                                                .round-billet__item Ипотечный марафон
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new2.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new2.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new2.webp', alt='', title='', loading='lazy')
+
+
+                            .content-blocks
+                                .row-col-space-between.al-center.h2-title-row
+                                    h2.h2_title Новости
+                                    a(href="#").btn_s.black.desctop Все новости
+                                .block-row.block-row__four-column
+                                    a(href="#").element-block-gray.element-block-news.element-col
+                                        .element-block-news__up
+                                            p.element-block-news__data 14.11.23
+                                            p.element-block-news__title Покупка земельного участка
+                                        p.element-block-news__des.
+                                            Детские пособия сохранят при досрочном выходе на работу
+
+                                    a(href="#").element-block-gray.element-block-news.element-col
+                                        .element-block-news__up
+                                            p.element-block-news__data 14.11.23
+                                            p.element-block-news__title Экплуатация
+                                        p.element-block-news__des.
+                                            Дарение недвижимости предложено заверять нотариально
+
+                                    a(href="#").element-block-gray.element-block-news.element-col
+                                        .element-block-news__up
+                                            p.element-block-news__data 14.11.23
+                                            p.element-block-news__title Общие вопросы
+                                        p.element-block-news__des.
+                                            ВЦИОМ: каждый третий россиянин имеет банковский вклад
+
+                                    a(href="#").element-block-gray.element-block-news.element-col
+                                        .element-block-news__up
+                                            p.element-block-news__data 14.11.23
+                                            p.element-block-news__title Общие вопросы
+                                        p.element-block-news__des.
+                                            Определен перечень организаций для получения налогового вычета за спорт
+
+
+                                a(href="#").btn_s.black.mobile Все новости
+                            .content-blocks
+                                .row-col-space-between.al-center
+                                    h2.h2_title Популярные вопросы
+                                    a(href="#").btn_s.black.desctop Все вопросы
+                                .block-row-flex
+                                    a(href="#").element-bunner.services.element-col.element-col__half.black-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Ипотека 2023: жилье на выгодных условиях
+                                            .element-bunner__bottom
+                                                .round-billet__item Ипотечный марафон
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new2.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new2.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new2.webp', alt='', title='', loading='lazy')
+
+                                    a(href="#").element-bunner.services.element-col.element-col__half.white-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Льготная ипотека до 8% на новостройки и ИЖС
+                                            .element-bunner__bottom
+                                                .round-billet__item ИЖС
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new.webp', alt='', title='', loading='lazy')
+
+                                a(href="#").btn_s.black.mobile Все вопросы
+                            .content-blocks
+                                .row-col-space-between.al-center
+                                    h2.h2_title Популярные инструкции
+                                    a(href="#").btn_s.black.desctop Все инструкции
+                                .block-row.block-row__three-column
+                                    .element-bunner.instruction.element-col.black-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Федеральные, региональные и местные <span class="highlighting">налоги</span>: в чем отличие?
+                                            .element-bunner__bottom
+                                                .round-billet__item Общие вопросы
+                                                .soc-list
+                                                    .soc-list__item
+                                                        a.soc-list__icon.soc-list__icon_like.active(href='#', aria-label='Лайк')
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg', aria-hidden='true')
+                                                                path(d='M7.6205 4.32554L8 4.76795L8.3795 4.32554C8.70208 3.94949 9.15781 3.478 9.6512 3.10502C10.1616 2.71921 10.6327 2.5 11 2.5C11.793 2.5 12.4013 2.83081 12.8222 3.35571C13.2513 3.89092 13.5 4.64955 13.5 5.5C13.5 6.32593 13.0871 7.25181 12.1326 8.28586C11.2207 9.27376 9.85055 10.3199 8.00005 11.4197C6.15082 10.3198 4.78194 9.26359 3.87081 8.25632C2.91868 7.20373 2.5 6.24325 2.5 5.36694C2.5 4.5177 2.74785 3.79785 3.16951 3.2993C3.58349 2.80984 4.19176 2.5 5 2.5C5.36728 2.5 5.83843 2.71921 6.3488 3.10502C6.84219 3.478 7.29792 3.94949 7.6205 4.32554Z', stroke='none')
+                                                        span.soc-list__counter 388
+                                                    .soc-list__item
+                                                        a.soc-list__icon.soc-list__icon_share(href='#', aria-label='Поделиться')
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg', aria-hidden='true')
+                                                                path(d='M9.15644 2.501C9.15538 2.5022 9.15472 2.50266 9.15471 2.50266C9.15471 2.50266 9.15553 2.50208 9.15756 2.50131L9.15714 2.50018L9.15644 2.501ZM9.15644 2.501L9.14444 2.46923L8.98 2.0339L9.15644 2.501ZM8.66664 5.00217H9.16664V4.50217V2.5C9.16866 2.5 9.17079 2.5002 9.17297 2.50064C9.17624 2.50129 9.17806 2.50215 9.17875 2.50253L13.4777 6.69105L9.17864 10.8797C9.17796 10.8801 9.17595 10.8811 9.17231 10.8818C9.17023 10.8822 9.16833 10.8824 9.16664 10.8824V8.88061V8.38061H8.66664H7.87465C5.60676 8.38061 3.54726 9.56328 2.51682 11.4937C2.51622 11.4942 2.51534 11.4948 2.51411 11.4955C2.51167 11.497 2.50878 11.4982 2.50581 11.499C2.50351 11.4996 2.50162 11.4999 2.50026 11.5L2.5 11.4999V10.6008C2.5 7.5438 5.16166 5.00217 8.50002 5.00217H8.66664Z', stroke='none')
+                                                        span.soc-list__counter 144
+                                                    .soc-list__item
+                                                        .soc-list__icon
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M2.18128 6.88115L2.15227 6.9999L2.18131 7.11864C2.71904 9.31683 5.20346 10.8332 8.00033 10.8332C10.7971 10.8332 13.2822 9.31689 13.8194 7.11853L13.8484 6.99977L13.8193 6.88103C13.2816 4.68285 10.7972 3.1665 8.00033 3.1665C5.20356 3.1665 2.71848 4.68279 2.18128 6.88115Z', stroke='none')
+                                                                circle(cx='7.99967', cy='7.00016', r='2.16667', stroke='none')
+                                                        span.soc-list__counter 1K
+                                        a(href="#").card-instruction__link
+
+                                    .element-bunner.instruction.element-col.black-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Федеральные, региональные и местные налоги: в чем отличие?
+                                            .element-bunner__bottom
+                                                .round-billet__item Общие вопросы
+                                                .soc-list
+                                                    .soc-list__item
+                                                        a.soc-list__icon.soc-list__icon_like.active(href='#', aria-label='Лайк')
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg', aria-hidden='true')
+                                                                path(d='M7.6205 4.32554L8 4.76795L8.3795 4.32554C8.70208 3.94949 9.15781 3.478 9.6512 3.10502C10.1616 2.71921 10.6327 2.5 11 2.5C11.793 2.5 12.4013 2.83081 12.8222 3.35571C13.2513 3.89092 13.5 4.64955 13.5 5.5C13.5 6.32593 13.0871 7.25181 12.1326 8.28586C11.2207 9.27376 9.85055 10.3199 8.00005 11.4197C6.15082 10.3198 4.78194 9.26359 3.87081 8.25632C2.91868 7.20373 2.5 6.24325 2.5 5.36694C2.5 4.5177 2.74785 3.79785 3.16951 3.2993C3.58349 2.80984 4.19176 2.5 5 2.5C5.36728 2.5 5.83843 2.71921 6.3488 3.10502C6.84219 3.478 7.29792 3.94949 7.6205 4.32554Z', stroke='none')
+                                                        span.soc-list__counter 388
+                                                    .soc-list__item
+                                                        a.soc-list__icon.soc-list__icon_share(href='#', aria-label='Поделиться')
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg', aria-hidden='true')
+                                                                path(d='M9.15644 2.501C9.15538 2.5022 9.15472 2.50266 9.15471 2.50266C9.15471 2.50266 9.15553 2.50208 9.15756 2.50131L9.15714 2.50018L9.15644 2.501ZM9.15644 2.501L9.14444 2.46923L8.98 2.0339L9.15644 2.501ZM8.66664 5.00217H9.16664V4.50217V2.5C9.16866 2.5 9.17079 2.5002 9.17297 2.50064C9.17624 2.50129 9.17806 2.50215 9.17875 2.50253L13.4777 6.69105L9.17864 10.8797C9.17796 10.8801 9.17595 10.8811 9.17231 10.8818C9.17023 10.8822 9.16833 10.8824 9.16664 10.8824V8.88061V8.38061H8.66664H7.87465C5.60676 8.38061 3.54726 9.56328 2.51682 11.4937C2.51622 11.4942 2.51534 11.4948 2.51411 11.4955C2.51167 11.497 2.50878 11.4982 2.50581 11.499C2.50351 11.4996 2.50162 11.4999 2.50026 11.5L2.5 11.4999V10.6008C2.5 7.5438 5.16166 5.00217 8.50002 5.00217H8.66664Z', stroke='none')
+                                                        span.soc-list__counter 144
+                                                    .soc-list__item
+                                                        .soc-list__icon
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M2.18128 6.88115L2.15227 6.9999L2.18131 7.11864C2.71904 9.31683 5.20346 10.8332 8.00033 10.8332C10.7971 10.8332 13.2822 9.31689 13.8194 7.11853L13.8484 6.99977L13.8193 6.88103C13.2816 4.68285 10.7972 3.1665 8.00033 3.1665C5.20356 3.1665 2.71848 4.68279 2.18128 6.88115Z', stroke='none')
+                                                                circle(cx='7.99967', cy='7.00016', r='2.16667', stroke='none')
+                                                        span.soc-list__counter 1K
+                                        a(href="#").card-instruction__link
+
+                                    .element-bunner.instruction.element-col.black-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Федеральные, региональные и местные налоги: в чем отличие?
+                                            .element-bunner__bottom
+                                                .round-billet__item Общие вопросы
+                                                .soc-list
+                                                    .soc-list__item
+                                                        a.soc-list__icon.soc-list__icon_like.active(href='#', aria-label='Лайк')
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg', aria-hidden='true')
+                                                                path(d='M7.6205 4.32554L8 4.76795L8.3795 4.32554C8.70208 3.94949 9.15781 3.478 9.6512 3.10502C10.1616 2.71921 10.6327 2.5 11 2.5C11.793 2.5 12.4013 2.83081 12.8222 3.35571C13.2513 3.89092 13.5 4.64955 13.5 5.5C13.5 6.32593 13.0871 7.25181 12.1326 8.28586C11.2207 9.27376 9.85055 10.3199 8.00005 11.4197C6.15082 10.3198 4.78194 9.26359 3.87081 8.25632C2.91868 7.20373 2.5 6.24325 2.5 5.36694C2.5 4.5177 2.74785 3.79785 3.16951 3.2993C3.58349 2.80984 4.19176 2.5 5 2.5C5.36728 2.5 5.83843 2.71921 6.3488 3.10502C6.84219 3.478 7.29792 3.94949 7.6205 4.32554Z', stroke='none')
+                                                        span.soc-list__counter 388
+                                                    .soc-list__item
+                                                        a.soc-list__icon.soc-list__icon_share(href='#', aria-label='Поделиться')
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg', aria-hidden='true')
+                                                                path(d='M9.15644 2.501C9.15538 2.5022 9.15472 2.50266 9.15471 2.50266C9.15471 2.50266 9.15553 2.50208 9.15756 2.50131L9.15714 2.50018L9.15644 2.501ZM9.15644 2.501L9.14444 2.46923L8.98 2.0339L9.15644 2.501ZM8.66664 5.00217H9.16664V4.50217V2.5C9.16866 2.5 9.17079 2.5002 9.17297 2.50064C9.17624 2.50129 9.17806 2.50215 9.17875 2.50253L13.4777 6.69105L9.17864 10.8797C9.17796 10.8801 9.17595 10.8811 9.17231 10.8818C9.17023 10.8822 9.16833 10.8824 9.16664 10.8824V8.88061V8.38061H8.66664H7.87465C5.60676 8.38061 3.54726 9.56328 2.51682 11.4937C2.51622 11.4942 2.51534 11.4948 2.51411 11.4955C2.51167 11.497 2.50878 11.4982 2.50581 11.499C2.50351 11.4996 2.50162 11.4999 2.50026 11.5L2.5 11.4999V10.6008C2.5 7.5438 5.16166 5.00217 8.50002 5.00217H8.66664Z', stroke='none')
+                                                        span.soc-list__counter 144
+                                                    .soc-list__item
+                                                        .soc-list__icon
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M2.18128 6.88115L2.15227 6.9999L2.18131 7.11864C2.71904 9.31683 5.20346 10.8332 8.00033 10.8332C10.7971 10.8332 13.2822 9.31689 13.8194 7.11853L13.8484 6.99977L13.8193 6.88103C13.2816 4.68285 10.7972 3.1665 8.00033 3.1665C5.20356 3.1665 2.71848 4.68279 2.18128 6.88115Z', stroke='none')
+                                                                circle(cx='7.99967', cy='7.00016', r='2.16667', stroke='none')
+                                                        span.soc-list__counter 1K
+
+                                        a(href="#").card-instruction__link
+                                    .element-bunner.instruction.element-col.black-content.mobile-visibility
+                                        .element-bunner__body
+                                            p.element-bunner__title Федеральные, региональные и местные налоги: в чем отличие?
+                                            .element-bunner__bottom
+                                                .round-billet__item Общие вопросы
+                                                .soc-list
+                                                    .soc-list__item
+                                                        a.soc-list__icon.soc-list__icon_like.active(href='#', aria-label='Лайк')
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg', aria-hidden='true')
+                                                                path(d='M7.6205 4.32554L8 4.76795L8.3795 4.32554C8.70208 3.94949 9.15781 3.478 9.6512 3.10502C10.1616 2.71921 10.6327 2.5 11 2.5C11.793 2.5 12.4013 2.83081 12.8222 3.35571C13.2513 3.89092 13.5 4.64955 13.5 5.5C13.5 6.32593 13.0871 7.25181 12.1326 8.28586C11.2207 9.27376 9.85055 10.3199 8.00005 11.4197C6.15082 10.3198 4.78194 9.26359 3.87081 8.25632C2.91868 7.20373 2.5 6.24325 2.5 5.36694C2.5 4.5177 2.74785 3.79785 3.16951 3.2993C3.58349 2.80984 4.19176 2.5 5 2.5C5.36728 2.5 5.83843 2.71921 6.3488 3.10502C6.84219 3.478 7.29792 3.94949 7.6205 4.32554Z', stroke='none')
+                                                        span.soc-list__counter 388
+                                                    .soc-list__item
+                                                        a.soc-list__icon.soc-list__icon_share(href='#', aria-label='Поделиться')
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg', aria-hidden='true')
+                                                                path(d='M9.15644 2.501C9.15538 2.5022 9.15472 2.50266 9.15471 2.50266C9.15471 2.50266 9.15553 2.50208 9.15756 2.50131L9.15714 2.50018L9.15644 2.501ZM9.15644 2.501L9.14444 2.46923L8.98 2.0339L9.15644 2.501ZM8.66664 5.00217H9.16664V4.50217V2.5C9.16866 2.5 9.17079 2.5002 9.17297 2.50064C9.17624 2.50129 9.17806 2.50215 9.17875 2.50253L13.4777 6.69105L9.17864 10.8797C9.17796 10.8801 9.17595 10.8811 9.17231 10.8818C9.17023 10.8822 9.16833 10.8824 9.16664 10.8824V8.88061V8.38061H8.66664H7.87465C5.60676 8.38061 3.54726 9.56328 2.51682 11.4937C2.51622 11.4942 2.51534 11.4948 2.51411 11.4955C2.51167 11.497 2.50878 11.4982 2.50581 11.499C2.50351 11.4996 2.50162 11.4999 2.50026 11.5L2.5 11.4999V10.6008C2.5 7.5438 5.16166 5.00217 8.50002 5.00217H8.66664Z', stroke='none')
+                                                        span.soc-list__counter 144
+                                                    .soc-list__item
+                                                        .soc-list__icon
+                                                            svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M2.18128 6.88115L2.15227 6.9999L2.18131 7.11864C2.71904 9.31683 5.20346 10.8332 8.00033 10.8332C10.7971 10.8332 13.2822 9.31689 13.8194 7.11853L13.8484 6.99977L13.8193 6.88103C13.2816 4.68285 10.7972 3.1665 8.00033 3.1665C5.20356 3.1665 2.71848 4.68279 2.18128 6.88115Z', stroke='none')
+                                                                circle(cx='7.99967', cy='7.00016', r='2.16667', stroke='none')
+                                                        span.soc-list__counter 1K
+                                        a(href="#").card-instruction__link
+
+
+                                a(href="#").btn_s.black.mobile Все инструкции
+                            .content-blocks
+                                .row-col-space-between.al-center
+                                    h2.h2_title Сервисы
+                                    a(href="#").btn_s.black.desctop Все сервисы
+                                .block-row-flex
+                                    a(href="#").element-bunner.services.element-col.element-col__two-thirds.black-content
+                                        .element-bunner__body
+                                            p.element-bunner__title ЖСК. Вступить, создать и выбрать объект
+                                            .element-bunner__bottom
+                                                .round-billet__item Ипотечный марафон
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new2.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new2.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new2.webp', alt='', title='', loading='lazy')
+
+                                    a(href="#").element-bunner.services.element-col.element-col__one-third.white-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Узнайте, сколько стоит ваша квартира
+                                            .element-bunner__bottom
+                                                .round-billet__item ИЖС
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new.webp', alt='', title='', loading='lazy')
+
+                                    a(href="#").element-bunner.services.element-col.element-col__one-third.white-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Кредитные каникулы для мобилизовынных
+                                            .element-bunner__bottom
+                                                .round-billet__item Государственная поддержка
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new.webp', alt='', title='', loading='lazy')
+
+                                    a(href="#").element-bunner.services.element-col.element-col__one-third.black-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Калькулятор
+                                            .element-bunner__bottom
+                                                .round-billet__item ИЖС
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new3.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new3.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new3.webp', alt='', title='', loading='lazy')
+
+                                    a(href="#").element-bunner.services.element-col.element-col__one-third.black-content
+                                        .element-bunner__body
+                                            p.element-bunner__title Проверить статус заявления на участие в «программе 450»
+                                            .element-bunner__bottom
+                                                .round-billet__item ИЖС
+                                                .element-bunner__icon
+                                            .element-bunner__img
+                                                picture
+                                                    source(srcset='img/img-bunner-new3.webp', media='(max-width: 767px)')
+                                                    source(srcset='img/img-bunner-new3.webp', media='(max-width: 1278px)')
+                                                    img.banner-block__image(src='img/img-bunner-new3.webp', alt='', title='', loading='lazy')
+
+
+
+
+
+                                a(href="#").btn_s.black.mobile Все сервисы
+
+                            .content-blocks
+                                .row-col-space-between.al-center
+                                    h2.h2_title Ключевые показатели по программам с господдержкой
+
+                                .key-indicators__container#key-indicators(v-cloak)
+                                    .round-billet(ref="KeyIndicatorsButtons")
+                                        .round-billet__item-type-2.js--program-item(
+                                            v-for="(item,index) of programs" :key="index"
+                                            :class="item.isActive?'active':''"
+                                            :data-program="item.key"
+                                            @click="programSelect"
+                                        ) {{item.name}}
+                                    .key-indicators(ref="KeyIndicatorsPanels")
+                                        .key-indicators__panel(
+                                            v-for="(item,index) of programs" :key="index"
+                                            :class="item.isActive?'active':''"
+                                            :data-program="item.key"
+                                        )
+
+                                            .key-indicators__wrapper
+                                                .key-indicators__list
+                                                    .key-indicators__calculations
+                                                        .key-indicators__list-item
+                                                            .key-indicators__wr-value
+                                                                span.key-indicators__list-value {{item.creditorCnt}}
+                                                                span.key-indicators__list-title {{item.creditorTitle}}
+                                                        .key-indicators__list-item
+                                                            .key-indicators__wr-value
+                                                                span.key-indicators__list-value {{item.loanCnt | format}}
+                                                                span.key-indicators__list-title {{item.loanCntMeasure}} {{item.loanCntTitle}}
+                                                        .key-indicators__list-item
+                                                            .key-indicators__wr-value
+                                                                span.key-indicators__list-value {{item.loanAmt | format}}
+                                                                span.key-indicators__list-title {{item.loanAmtTitle}}, {{item.loanAmtMeasure}}&nbsp;₽
+
+
+
+
+                include ../includes/new-page-form
+        include ../includes/redesign-site/footer
+        include ../includes/cookies
+        include ../mixins/modal-back-call-new.pug
+        +modal-back-call-new('bg-grey','Заказать обратный звонок','Напишите, какого калькулятора вам не хватает','Ваше предложение было успешно отправлено')
+        include ../includes/modals/modal-success-send-new
+    //#beesender-chat
+    //кнопка чата
+
+    .chat-bot__container.js--chat-bot
+        .btn_s.black.chat-bot__button.js--open-chat-bot
+            p Чат-бот
+        .chat-bot
+            .chat-bot__close.js--chat-bot-close
+                svg(width='17', height='17', viewbox='0 0 17 17', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path(fill-rule='evenodd', clip-rule='evenodd', d='M0.999925 1.00017C1.39045 0.609644 2.02361 0.609644 2.41414 1.00017L8.77824 7.36427L15.1421 1.00046C15.5326 0.609936 16.1657 0.609936 16.5563 1.00046C16.9468 1.39098 16.9468 2.02415 16.5563 2.41467L10.1925 8.77849L16.5563 15.1423C16.9468 15.5328 16.9468 16.166 16.5563 16.5565C16.1657 16.947 15.5326 16.947 15.1421 16.5565L8.77824 10.1927L2.41414 16.5568C2.02361 16.9473 1.39045 16.9473 0.999925 16.5568C0.6094 16.1663 0.6094 15.5331 0.999924 15.1426L7.36403 8.77849L0.999925 2.41438C0.6094 2.02386 0.6094 1.39069 0.999925 1.00017Z', fill='#252628')
+
+            .chat-bot__wr-body
+                .chat-bot__img
+                    img(src="img/chat-bot.png")
+                .chat-bot__body
+                    p.chat-bot__title Задайте вопрос виртуальному помощнику
+                    p.chat-bot__des Опишите свою жизненную ситуацию и получите персональную консультацию
+            a(href="https://t.me/domrf_kc_ignisbot" target="_blank").btn_s.black.chat-bot__window-btn Перейти в Телеграм
